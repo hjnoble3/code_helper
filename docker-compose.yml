@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"  # Expose Ollama's API port
+    volumes:
+      - ollama_data:/root/.ollama     # Persist Ollama models
+    command: serve                   # Start the Ollama server
+    networks:
+      - app_network
+
+  gradio_app:
+    build:
+      context: .                    # Build from root directory
+      dockerfile: dockerfile        # Use your lowercase 'dockerfile'
+    container_name: gradio_app
+    ports:
+      - "7860:7860"                 # Expose Gradio UI port
+    volumes:
+      - ..:/app/shared_files  # Mount local shared_files to container
+    environment:
+      - OLLAMA_PORT=11434           # Ollama's internal port
+    depends_on:
+      - ollama                      # Ensure Ollama starts first
+    networks:
+      - app_network
+
+volumes:
+  ollama_data:                      # Named volume for Ollama data persistence
+
+networks:
+  app_network:
+    driver: bridge                  # Default bridge network
