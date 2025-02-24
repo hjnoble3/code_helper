@@ -13,3 +13,11 @@ Get-ChildItem -Directory -Recurse | Where-Object { -not $_.GetFiles("*", "AllDir
 ```cmd
 powershell -Command "Get-ChildItem -Directory -Recurse | Where-Object { (Get-ChildItem $_.FullName -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false }) -eq $null } | Remove-Item -Recurse"
 ```
+```cmd
+do {
+    $emptyFolders = Get-ChildItem -Directory -Recurse | Where-Object {
+        -not ($_ | Get-ChildItem -Recurse -Force)
+    }
+    $emptyFolders | Remove-Item -Recurse -Force
+} while ($emptyFolders.Count -gt 0)
+```
