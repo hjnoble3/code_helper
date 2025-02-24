@@ -9,3 +9,7 @@ git log -1 --pretty=format:"%H - %an, %ar : %s" -- ric\backend\apps\images\main.
 ```powershell
 Get-ChildItem -Directory -Recurse | Where-Object { -not $_.GetFiles("*", "AllDirectories") } | Remove-Item -Force -Recurse
 ```
+
+```cmd
+powershell -Command "Get-ChildItem -Directory -Recurse | Where-Object { (Get-ChildItem $_.FullName -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false }) -eq $null } | Remove-Item -Recurse"
+```
