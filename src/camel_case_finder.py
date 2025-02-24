@@ -1,61 +1,58 @@
-# camel_case_finder.py
 import os
 import re
+import json
 from datetime import datetime
 import sys
+from pathlib import Path
+from multiprocessing import Pool, cpu_count
 from llm_backend import llm_interface
 
 
 class CamelCaseFinder:
     def __init__(self):
-        # Store unique results as {original: (suggested, file_ext)}
-        self.results = {}
-        # Cache LLM outcomes as {(original, file_ext): is_library_related}
-        self.llm_cache = {}
-        # Define patterns for known file types
+        self.results = {}  # {original: (suggested, file_ext)}
+        self.llm_cache = {}  # {(original, file_ext): is_library_related}
         self.patterns = {
             '.py': [
-                (r'\bclass\s+([a-zA-Z_][a-zA-Z0-9_]*)\b', 'class'),
-                (r'\b(?:def|var|let|const)\s+([a-zA-Z_][a-zA-Z0-9_]*)\b', 'function_or_var')
+                (re.compile(r'\bclass\s+([a-zA-Z_][a-zA-Z0-9_]*)\b'), 'class'),
+                (re.compile(r'\b(?:def|var|let|const)\s+([a-zA-Z_][a-zA-Z0-9_]*)\b'), 'function_or_var')
             ],
             '.js': [
-                (r'\bclass\s+([a-zA-Z_][a-zA-Z0-9_]*)\b', 'class'),
-                (r'\b(?:function|var|let|const)\s+([a-zA-Z_][a-zA-Z0-9_]*)\b', 'function_or_var')
+                (re.compile(r'\bclass\s+([a-zA-Z_][a-zA-Z0-9_]*)\b'), 'class'),
+                (re.compile(r'\b(?:function|var|let|const)\s+([a-zA-Z_][a-zA-Z0-9_]*)\b'), 'function_or_var')
             ],
             '.ts': [
-                (r'\bclass\s+([a-zA-Z_][a-zA-Z0-9_]*)\b', 'class'),
-                (r'\b(?:function|var|let|const)\s+([a-zA-Z_][a-zA-Z0-9_]*)\b', 'function_or_var')
+                (re.compile(r'\bclass\s+([a-zA-Z_][a-zA-Z0-9_]*)\b'), 'class'),
+                (re.compile(r'\b(?:function|var|let|const)\s+([a-zA-Z_][a-zA-Z0-9_]*)\b'), 'function_or_var')
             ],
             '.svelte': [
-                (r'\bclass\s+([a-zA-Z_][a-zA-Z0-9_]*)\b', 'class'),
-                (r'\b(?:function|var|let|const)\s+([a-zA-Z_][a-zA-Z0-9_]*)\b', 'function_or_var')
+                (re.compile(r'\bclass\s+([a-zA-Z_][a-zA-Z0-9_]*)\b'), 'class'),
+                (re.compile(r'\b(?:function|var|let|const)\s+([a-zA-Z_][a-zA-Z0-9_]*)\b'), 'function_or_var')
             ],
             '.html': [
-                (r'\b(?:id|class)=["\']([a-zA-Z_][a-zA-Z0-9_]*?)["\']', 'attribute')
+                (re.compile(r'\b(?:id|class)=["\']([a-zA-Z_][a-zA-Z0-9_]*?)["\']'), 'attribute')
             ],
             '.css': [
-                (r'(?<=[\{\s])[a-zA-Z_][a-zA-Z0-9_]*(?=\s*[:\{])', 'selector')
+                (re.compile(r'(?<=[\{\s])[a-zA-Z_][a-zA-Z0-9_]*(?=\s*[:\{])'), 'selector')
             ]
         }
+        self.camel_to_snake = re.compile(r'(?<!^)(?=[A-Z])')
+        self.multi_underscore = re.compile(r'_+')
 
     def is_snake_case(self, name):
-        """Check if a name is already in snake_case."""
-        return name == name.lower() and "_" in name or not any(c.isupper() for c in name)
+        return "_" in name or not any(c.isupper() for c in name)
 
     def is_camel_or_pascal(self, name):
-        """Check if a name is in camelCase or PascalCase (allowed for classes)."""
         return (name[0].isupper() or (name[0].islower() and any(c.isupper() for c in name))) and "_" not in name
 
     def to_snake_case(self, name):
-        """Convert a name to snake_case."""
         if not name:
             return name
-        s = re.sub(r'(?<!^)(?=[A-Z])', '_', name).lower()
-        s = re.sub(r'_+', '_', s)
+        s = self.camel_to_snake.sub('_', name).lower()
+        s = self.multi_underscore.sub('_', s)
         return s.strip('_')
 
     def extract_imports(self, file_path):
-        """Extract potential import statements from a file."""
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
@@ -66,31 +63,25 @@ class CamelCaseFinder:
         imports = set()
 
         if ext == '.py':
-            import_pattern = r'^\s*import\s+([\w\.]+)(?:\s+as\s+\w+)?'
-            from_import_pattern = r'^\s*from\s+([\w\.]+)\s+import\s+([\w,\s*]+)'
-            for line in content.splitlines():
-                import_match = re.match(import_pattern, line)
-                if import_match:
-                    imports.add(import_match.group(1))
-                from_match = re.match(from_import_pattern, line)
-                if from_match:
-                    module = from_match.group(1)
-                    imported_items = from_match.group(2).replace(' ', '').split(',')
-                    imports.add(module)
-                    imports.update(item for item in imported_items if item != '*')
+            import_pattern = re.compile(r'^\s*import\s+([\w\.]+)(?:\s+as\s+\w+)?', re.MULTILINE)
+            from_import_pattern = re.compile(r'^\s*from\s+([\w\.]+)\s+import\s+([\w,\s*]+)', re.MULTILINE)
+            for match in import_pattern.finditer(content):
+                imports.add(match.group(1))
+            for match in from_import_pattern.finditer(content):
+                module = match.group(1)
+                imported_items = match.group(2).replace(' ', '').split(',')
+                imports.add(module)
+                imports.update(item for item in imported_items if item != '*')
         elif ext in ('.js', '.ts', '.svelte'):
-            import_pattern = r'^\s*import\s+.*\s+from\s+[\'"]([^\'"]+)[\'"]'
-            for line in content.splitlines():
-                match = re.match(import_pattern, line)
-                if match:
-                    imports.add(match.group(1))
+            import_pattern = re.compile(r'^\s*import\s+.*\s+from\s+[\'"]([^\'"]+)[\'"]', re.MULTILINE)
+            for match in import_pattern.finditer(content):
+                imports.add(match.group(1))
 
         return imports
 
-    def is_library_related(self, name, imports, file_ext, model):
-        """Ask LLM if the name is related to the imported packages using the provided model."""
-        if not imports:
-            return False
+    def batch_is_library_related(self, identifiers, imports, file_ext, model):
+        if not imports or not identifiers:
+            return {ident: False for ident in identifiers}
 
         language = {
             '.py': 'Python',
@@ -100,33 +91,22 @@ class CamelCaseFinder:
         }.get(file_ext, 'Unknown')
 
         prompt = (
-            f"Given the identifier '{name}' and the following imported {language} packages/modules: "
-            f"{', '.join(imports)}, is '{name}' a class, function, or variable defined by any of these "
-            f"packages or the {language} standard library? Answer 'Yes' or 'No'."
+            f"For each identifier below, determine if it is a class, function, or variable defined by the "
+            f"following imported {language} packages/modules: {', '.join(imports)} or the {language} standard library.\n"
+            f"Provide answers as a JSON object where keys are identifiers and values are 'Yes' or 'No'.\n\n"
+            f"Identifiers: {', '.join(identifiers)}"
         )
         response = llm_interface(prompt, model, 0.7, 0.9, 512)
-        return response.strip().lower() == 'yes'
+        try:
+            results = json.loads(response)
+            return {ident: results.get(ident, 'No').lower() == 'yes' for ident in identifiers}
+        except Exception:
+            return {ident: False for ident in identifiers}
 
-    def get_patterns_for_ext(self, ext):
-        """Get or prompt for regex patterns for a file extension."""
-        if ext in self.patterns:
-            return self.patterns[ext]
-
-        print(f"Unknown file extension: {ext}. Please provide regex patterns.")
-        patterns = []
-        while True:
-            pattern = input("Enter regex pattern (or 'done' to finish): ")
-            if pattern.lower() == 'done':
-                break
-            decl_type = input("Enter declaration type (e.g., class, function_or_var): ")
-            patterns.append((pattern, decl_type))
-        self.patterns[ext] = patterns
-        return patterns
-
-    def find_non_snake_case(self, file_path, model):
-        """Find variables/functions not in snake_case, excluding library-related names."""
+    def find_non_snake_case(self, args):
+        file_path, model = args
         ext = os.path.splitext(file_path)[1].lower()
-        file_patterns = self.get_patterns_for_ext(ext)
+        file_patterns = self.patterns.get(ext, [])
         if not file_patterns:
             return []
 
@@ -139,7 +119,7 @@ class CamelCaseFinder:
         non_snake_cases = []
         for i, line in enumerate(lines, 1):
             for pattern, decl_type in file_patterns:
-                for match in re.finditer(pattern, line):
+                for match in pattern.finditer(line):
                     name = match.group(1)
                     if decl_type == 'class' and self.is_camel_or_pascal(name):
                         continue
@@ -148,48 +128,64 @@ class CamelCaseFinder:
                         if suggested != name:
                             non_snake_cases.append((name, suggested, i, ext))
 
-        # Filter out library-related names
-        filtered_cases = []
-        imports = self.extract_imports(file_path)
-        if ext == '.py':
-            imports.update(getattr(sys, 'stdlib_module_names', set()))
+        return non_snake_cases
 
-        for original, suggested, line_num, ext in non_snake_cases:
-            cache_key = (original, ext)
-            if cache_key in self.llm_cache:
-                if not self.llm_cache[cache_key]:  # Not library-related
-                    filtered_cases.append((original, suggested, line_num, ext))
-            else:
-                is_related = self.is_library_related(original, imports, ext, model)
-                self.llm_cache[cache_key] = is_related
-                if not is_related:  # Can be snake_case
-                    filtered_cases.append((original, suggested, line_num, ext))
-
-        return filtered_cases
-
-    def scan_directory(self, repo_path: str, extensions: list, model: str):
-        """Scan the repository for non-snake_case identifiers, excluding library names."""
-        if not repo_path or not os.path.isdir(repo_path):
+    def scan_directory(self, repo_path: str, extensions: list, model: str, progress=None):
+        """Scan the repository with Gradio progress updates."""
+        repo = Path(repo_path)
+        if not repo.is_dir():
             return "Please enter a valid repository folder path"
 
-        extensions = [ext if ext.startswith('.') else f'.{ext}' for ext in extensions]
+        extensions = {ext if ext.startswith('.') else f'.{ext}' for ext in extensions}
         output = ["Scanning for non-snake_case identifiers (classes and library names excluded)..."]
         self.results = {}
 
-        for root, _, files in os.walk(repo_path):
-            for file in files:
-                file_ext = os.path.splitext(file)[1].lower()
-                if file_ext in extensions:
-                    file_path = os.path.join(root, file)
-                    non_snake_cases = self.find_non_snake_case(file_path, model)
-                    if non_snake_cases:
-                        relative_path = os.path.relpath(file_path, repo_path)
-                        for original, suggested, line_num, ext in non_snake_cases:
-                            if original not in self.results:
-                                self.results[original] = (suggested, ext)
-                            cache_key = (original, ext)
-                            is_pkg = self.llm_cache.get(cache_key, "Pending")
-                            output.append(f"{relative_path}: Line {line_num} - {original} -> {suggested} (Package: {is_pkg})")
+        files_to_process = [f for f in repo.rglob('*') if f.is_file() and f.suffix.lower() in extensions]
+        if not files_to_process:
+            output.append("No matching files found.")
+            return "\n".join(output)
+
+        total_files = len(files_to_process)
+        # Initialize progress with the total number of files
+        if progress is not None:
+            progress((0, total_files), desc="Starting scan...", total=total_files)
+
+        with Pool(cpu_count()) as pool:
+            file_results = pool.imap_unordered(self.find_non_snake_case, [(str(f), model) for f in files_to_process])
+
+            all_non_snake = {}
+            imports_cache = {}
+            processed_files = 0
+
+            for file_result, file_path in zip(file_results, files_to_process):
+                processed_files += 1
+                if progress is not None:
+                    progress((processed_files, total_files), desc=f"Scanned {processed_files}/{total_files} files", total=total_files)
+
+                if not file_result:
+                    continue
+                relative_path = str(file_path.relative_to(repo))
+                ext = file_path.suffix.lower()
+                imports = imports_cache.setdefault(file_path, self.extract_imports(file_path))
+                if ext == '.py':
+                    imports.update(getattr(sys, 'stdlib_module_names', set()))
+
+                for original, suggested, line_num in file_result:
+                    if original not in self.results:
+                        self.results[original] = (suggested, ext)
+                    all_non_snake.setdefault(file_path, []).append((original, suggested, line_num))
+
+        for file_path, cases in all_non_snake.items():
+            ext = file_path.suffix.lower()
+            identifiers = [original for original, _, _ in cases]
+            imports = imports_cache[file_path]
+            batch_results = self.batch_is_library_related(identifiers, imports, ext, model)
+            for original, suggested, line_num in cases:
+                cache_key = (original, ext)
+                is_related = batch_results.get(original, False)
+                self.llm_cache[cache_key] = is_related
+                if not is_related:
+                    output.append(f"{file_path.relative_to(repo)}: Line {line_num} - {original} -> {suggested} (Package: {is_related})")
 
         if not self.results:
             output.append("No non-snake_case identifiers found.")
@@ -199,19 +195,19 @@ class CamelCaseFinder:
         return "\n".join(output)
 
     def export_results(self, repo_path: str):
-        """Export unique results with file type to a file in the repository path."""
         if not self.results:
             return "No results to export"
 
-        if not repo_path or not os.path.isdir(repo_path):
+        repo = Path(repo_path)
+        if not repo.is_dir():
             return "Invalid repository path for export"
 
-        repo_name = repo_path.split('/app/shared_files/')[-1].replace('/', '_') or 'repo'
+        repo_name = repo.name or 'repo'
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        output_file = os.path.join(repo_path, f"{repo_name}_non_snake_case_{timestamp}.txt")
+        output_file = repo / f"{repo_name}_non_snake_case_{timestamp}.txt"
 
         try:
-            with open(output_file, 'w', encoding='utf-8') as f:
+            with output_file.open('w', encoding='utf-8') as f:
                 f.write("File Type,Original Name,Suggested Snake Case,Package Related\n")
                 for original, (suggested, file_ext) in self.results.items():
                     is_pkg = self.llm_cache.get((original, file_ext), "Unknown")
@@ -221,14 +217,14 @@ class CamelCaseFinder:
             return f"Error exporting results: {str(e)}"
 
     def load_results(self, export_file: str):
-        """Load results from a previously exported file."""
-        if not os.path.isfile(export_file):
+        export_path = Path(export_file)
+        if not export_path.is_file():
             return f"Error: '{export_file}' is not a valid file."
 
         self.results = {}
         self.llm_cache = {}
         try:
-            with open(export_file, 'r', encoding='utf-8') as f:
+            with export_path.open('r', encoding='utf-8') as f:
                 lines = f.readlines()
                 if not lines or lines[0].strip() != "File Type,Original Name,Suggested Snake Case,Package Related":
                     return "Error: Invalid file format."
@@ -238,35 +234,23 @@ class CamelCaseFinder:
                         continue
                     file_ext, original, suggested, is_pkg = parts
                     self.results[original] = (suggested, file_ext)
-                    # Convert string 'True'/'False'/'Unknown' to boolean or leave as string
-                    if is_pkg == 'True':
-                        self.llm_cache[(original, file_ext)] = True
-                    elif is_pkg == 'False':
-                        self.llm_cache[(original, file_ext)] = False
-                    else:
-                        self.llm_cache[(original, file_ext)] = False  # Treat 'Unknown' as False for replacement
+                    self.llm_cache[(original, file_ext)] = is_pkg == 'True'
             return f"Loaded results from {export_file}. {len(self.results)} identifiers ready for replacement."
         except Exception as e:
             return f"Error loading results: {str(e)}"
 
     def replace_with_snake_case(self, repo_path: str, extensions: list = None):
-        """Replace non-snake_case identifiers with their snake_case versions across all files."""
         if not self.results:
             return "No identifiers to replace. Please scan or load results first."
 
-        if not repo_path or not os.path.isdir(repo_path):
+        repo = Path(repo_path)
+        if not repo.is_dir():
             return "Invalid repository path"
 
-        # If extensions are provided, filter results to only those matching the extensions
-        if extensions:
-            extensions = [ext if ext.startswith('.') else f'.{ext}' for ext in extensions]
-            filtered_results = {
-                original: (suggested, ext)
-                for original, (suggested, ext) in self.results.items()
-                if ext in extensions
-            }
-        else:
-            filtered_results = self.results
+        extensions = {ext if ext.startswith('.') else f'.{ext}' for ext in (extensions or [])}
+        filtered_results = self.results if not extensions else {
+            orig: (sug, ext) for orig, (sug, ext) in self.results.items() if ext in extensions
+        }
 
         if not filtered_results:
             return "No identifiers match the specified file extensions."
@@ -274,33 +258,30 @@ class CamelCaseFinder:
         output = ["Replacing non-snake_case identifiers..."]
         updated_files = set()
 
-        for root, _, files in os.walk(repo_path):
-            for file in files:
-                file_ext = os.path.splitext(file)[1].lower()
-                if extensions and file_ext not in extensions:
-                    continue  # Skip files not matching the specified extensions
-                file_path = os.path.join(root, file)
-                try:
-                    with open(file_path, 'r', encoding='utf-8') as f:
-                        content = f.read()
+        for file_path in repo.rglob('*'):
+            if not file_path.is_file() or (extensions and file_path.suffix.lower() not in extensions):
+                continue
+            ext = file_path.suffix.lower()
+            try:
+                with file_path.open('r', encoding='utf-8') as f:
+                    content = f.read()
 
-                    new_content = content
-                    for original, (suggested, ext) in filtered_results.items():
-                        if ext == file_ext:  # Only replace if file extension matches
-                            pattern = rf'(?<!\w){re.escape(original)}(?!\w)'
-                            new_content = re.sub(pattern, suggested, new_content)
+                new_content = content
+                for original, (suggested, file_ext) in filtered_results.items():
+                    if file_ext == ext:
+                        pattern = rf'(?<!\w){re.escape(original)}(?!\w)'
+                        new_content = re.sub(pattern, suggested, new_content)
 
-                    if new_content != content:
-                        with open(file_path, 'w', encoding='utf-8') as f:
-                            f.write(new_content)
-                        relative_path = os.path.relpath(file_path, repo_path)
-                        updated_files.add(relative_path)
-                except Exception as e:
-                    output.append(f"Error updating {file_path}: {str(e)}")
+                if new_content != content:
+                    with file_path.open('w', encoding='utf-8') as f:
+                        f.write(new_content)
+                    updated_files.add(str(file_path.relative_to(repo)))
+            except Exception as e:
+                output.append(f"Error updating {file_path}: {str(e)}")
 
         if updated_files:
             output.extend([f"Updated {path}" for path in updated_files])
         output.append("Replacement complete.")
-        self.results = {}  # Clear results after replacement
-        self.llm_cache = {}  # Clear cache as well
+        self.results = {}
+        self.llm_cache = {}
         return "\n".join(output)

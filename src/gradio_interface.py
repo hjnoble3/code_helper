@@ -5,7 +5,7 @@ from repo_file_combiner import RepoFileCombiner
 from comment_finder import CommentFinder
 from camel_case_finder import CamelCaseFinder
 from code_improver import CodeImprover
-from repo_analyzer import RepoAnalyzer  # Import the new class
+from repo_analyzer import RepoAnalyzer
 import os
 
 # Create instances of the classes
@@ -13,7 +13,7 @@ repo_combiner = RepoFileCombiner()
 comment_finder = CommentFinder()
 camel_case_finder = CamelCaseFinder()
 code_improver = CodeImprover()
-repo_analyzer = RepoAnalyzer(github_base_url="https://github.com/user/repo/blob/main")  # Default GitHub URL
+repo_analyzer = RepoAnalyzer(github_base_url="https://github.com/user/repo/blob/main")
 
 # Default mounted path in the container
 DEFAULT_MOUNT_PATH = "/app/shared_files"
@@ -35,7 +35,6 @@ with gr.Blocks(title="CodeFixer") as demo:
     gr.Markdown("# CodeFixer")
     gr.Markdown("Interact with an LLM, check for unused files, combine files, find/delete comments, convert to snake_case, improve code quality, or analyze repository structure.")
 
-    # Repository selector with manual input and update button
     with gr.Row():
         repo_input = gr.Textbox(
             label="Repository Path",
@@ -51,10 +50,9 @@ with gr.Blocks(title="CodeFixer") as demo:
         multiselect=True
     )
 
-    # Single model dropdown for all tabs
     model_input = gr.Dropdown(
         label="Model",
-        choices=["llama3.2:1b", "qwen2.5-coder"],  # Adjust based on available models
+        choices=["llama3.2:1b", "qwen2.5-coder"],
         value="llama3.2:1b"
     )
 
@@ -171,43 +169,7 @@ with gr.Blocks(title="CodeFixer") as demo:
             def scan_snake_case(repo_path, exts, model, progress=gr.Progress()):
                 if not repo_path or not os.path.isdir(repo_path):
                     return "Please enter a valid repository folder path"
-
-                exts = [ext if ext.startswith('.') else f'.{ext}' for ext in exts]
-                output = ["Scanning for non-snake_case identifiers (classes and library names excluded)..."]
-                camel_case_finder.results = {}
-
-                total_files = sum(
-                    len([f for f in files if os.path.splitext(f)[1].lower() in exts])
-                    for _, _, files in os.walk(repo_path)
-                )
-                processed_files = 0
-
-                progress(0, desc="Starting scan...")
-
-                for root, _, files in os.walk(repo_path):
-                    for file in files:
-                        file_ext = os.path.splitext(file)[1].lower()
-                        if file_ext in exts:
-                            file_path = os.path.join(root, file)
-                            non_snake_cases = camel_case_finder.find_non_snake_case(file_path, model)
-                            if non_snake_cases:
-                                relative_path = os.path.relpath(file_path, repo_path)
-                                for original, suggested, line_num, ext in non_snake_cases:
-                                    if original not in camel_case_finder.results:
-                                        camel_case_finder.results[original] = (suggested, ext)
-                                    cache_key = (original, ext)
-                                    is_pkg = camel_case_finder.llm_cache.get(cache_key, "Pending")
-                                    output.append(f"{relative_path}: Line {line_num} - {original} -> {suggested} (Package: {is_pkg})")
-
-                            processed_files += 1
-                            progress(processed_files / total_files, desc=f"Scanned {processed_files}/{total_files} files")
-
-                if not camel_case_finder.results:
-                    output.append("No non-snake_case identifiers found.")
-                else:
-                    output.append(f"\nFound {len(camel_case_finder.results)} unique non-snake_case identifiers across files.")
-
-                return "\n".join(output)
+                return camel_case_finder.scan_directory(repo_path, exts, model, progress)
 
             def replace_snake_case(repo_path, exts):
                 return camel_case_finder.replace_with_snake_case(repo_path, exts)
@@ -241,7 +203,6 @@ with gr.Blocks(title="CodeFixer") as demo:
                 outputs=snake_output
             )
 
-        # Code Improver Tab with Progress Bar
         with gr.Tab("Code Improver"):
             with gr.Row():
                 with gr.Column():
@@ -273,13 +234,11 @@ with gr.Blocks(title="CodeFixer") as demo:
                     "Restrict AI Providers", "Cleanup Dependencies"
                 ]}
 
-                # Convert extensions to set and filter by supported ones
                 extensions = {f".{ext}" if not ext.startswith('.') else ext for ext in exts}
                 unsupported = extensions - code_improver.SUPPORTED_EXTENSIONS
                 if unsupported:
                     extensions -= unsupported
 
-                # Get total number of files to process
                 files_to_process = [
                     os.path.join(root, file)
                     for root, _, files in os.walk(repo_path)
@@ -291,12 +250,10 @@ with gr.Blocks(title="CodeFixer") as demo:
                 if total_files == 0:
                     return "No files found matching the selected extensions."
 
-                # Initialize progress and output
                 progress(0, desc="Starting code improvement...")
                 output = ["Improving scripts..."]
                 processed_files = 0
 
-                # Process each file with progress updates
                 for file_path in files_to_process:
                     result = code_improver.improve_file(file_path, options_dict, model)
                     output.append(result)
@@ -343,7 +300,6 @@ with gr.Blocks(title="CodeFixer") as demo:
 
                 tree, processed_files_count = repo_analyzer.generate_tree(repo_path, exts, model)
 
-                # Save the tree to a Markdown file
                 md_file_path = os.path.join(repo_path, "repository_tree.md")
                 try:
                     with open(md_file_path, 'w', encoding='utf-8') as md_file:
