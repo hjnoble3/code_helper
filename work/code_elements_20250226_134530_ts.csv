@@ -155,7 +155,6 @@ File Type,Element Type,Element Name
 .ts,function,approximateToHumanReadable
 .ts,variable,exportConfig
 .ts,variable,chat
-.ts,variable,f
 .ts,variable,updateFeedbackById
 .ts,variable,approximateToHumanReadable
 .ts,variable,mountDir
@@ -226,7 +225,6 @@ File Type,Element Type,Element Name
 .ts,variable,imageGenerations
 .ts,variable,RETRIEVAL_API_BASE_URL
 .ts,variable,getChatsByFolderId
-.ts,variable,a
 .ts,variable,updateFolderNameById
 .ts,variable,updateFolderItemsById
 .ts,variable,charCount
@@ -299,7 +297,6 @@ File Type,Element Type,Element Name
 .ts,variable,verifyConfigUrl
 .ts,variable,addUser
 .ts,variable,getGroupById
-.ts,variable,y
 .ts,variable,getCommunitySharingEnabledStatus
 .ts,variable,sentences
 .ts,function,getImportOrigin
@@ -456,7 +453,6 @@ File Type,Element Type,Element Name
 .ts,variable,getFormattedTime
 .ts,variable,diffTime
 .ts,variable,WEBUI_BASE_URL
-.ts,variable,p
 .ts,variable,scale
 .ts,variable,updateGroupById
 .ts,function,escapeRegExp
@@ -700,7 +696,6 @@ File Type,Element Type,Element Name
 .ts,variable,parentMessageId
 .ts,variable,generatePrompt
 .ts,variable,chatCompleted
-.ts,variable,i
 .ts,function,titleGenerationTemplate
 .ts,variable,deleteKnowledgeById
 .ts,variable,getChannelThreadMessages

@@ -27,7 +27,6 @@ File Type,Element Type,Element Name
 .py,variable,tool_call
 .py,function,delete
 .py,variable,user_groups
-.py,variable,to
 .py,variable,OLLAMA_API_CONFIGS
 .py,function,move_data_back_to_modelfile
 .py,class,TestUsers
@@ -104,7 +103,6 @@ File Type,Element Type,Element Name
 .py,class,TestLocalStorageProvider
 .py,variable,Groups
 .py,variable,task
-.py,variable,s
 .py,variable,html_body
 .py,variable,existing_type
 .py,variable,CODE_INTERPRETER_JUPYTER_URL
@@ -351,7 +349,6 @@ File Type,Element Type,Element Name
 .py,variable,ws_url
 .py,variable,OPENAI_NOT_FOUND
 .py,function,test_get_file_not_found
-.py,variable,k
 .py,variable,chats_by_user
 .py,variable,PERSISTENT_CONFIG_REGISTRY
 .py,variable,validate
@@ -365,7 +362,6 @@ File Type,Element Type,Element Name
 .py,variable,CODE_INTERPRETER_JUPYTER_AUTH
 .py,variable,collection_name_with_prefix
 .py,variable,autodetect_encoding
-.py,variable,hl
 .py,function,process_pipeline_outlet_filter
 .py,variable,permission_hierarchy
 .py,variable,web_paths
@@ -711,7 +707,6 @@ File Type,Element Type,Element Name
 .py,variable,delta_arguments
 .py,variable,auto_bind
 .py,function,insert_new_file
-.py,variable,ef
 .py,function,update_user_last_active_by_id
 .py,function,get_tool_by_id
 .py,function,get_feedback_by_id
@@ -769,7 +764,6 @@ File Type,Element Type,Element Name
 .py,function,check_vector_length
 .py,variable,VERSION
 .py,variable,sha256_hash
-.py,variable,cn
 .py,variable,tool_call_index
 .py,variable,use_ssl
 .py,function,post_response_handler
@@ -810,7 +804,6 @@ File Type,Element Type,Element Name
 .py,variable,LDAP_ATTRIBUTE_FOR_USERNAME
 .py,class,BatchProcessFilesResult
 .py,variable,index_prefix
-.py,variable,q
 .py,variable,credential
 .py,variable,message_matches
 .py,variable,duration
@@ -872,7 +865,6 @@ File Type,Element Type,Element Name
 .py,variable,OLLAMA_NOT_FOUND
 .py,function,import_chat
 .py,variable,OPENAI_MODELS
-.py,variable,ts
 .py,function,delete_memory_by_user_id
 .py,variable,S3_KEY_PREFIX
 .py,function,openai_o1_o3_handler
@@ -897,7 +889,6 @@ File Type,Element Type,Element Name
 .py,class,ProcessFileForm
 .py,variable,current
 .py,class,MessageResponse
-.py,variable,r
 .py,class,ChannelForm
 .py,variable,title
 .py,variable,frontend_loader
@@ -970,7 +961,6 @@ File Type,Element Type,Element Name
 .py,function,apply_model_system_prompt_to_body
 .py,function,delete_tag_by_id_and_tag_name
 .py,variable,descriptions
-.py,variable,db
 .py,variable,openai_tool_call
 .py,variable,limit
 .py,variable,existing_doc_ids
@@ -991,7 +981,6 @@ File Type,Element Type,Element Name
 .py,variable,NO_LIMIT
 .py,variable,target_metadata
 .py,function,replace_messages_variable
-.py,variable,ex
 .py,class,QdrantClient
 .py,variable,file_data
 .py,function,get_code_execution_config
@@ -1261,7 +1250,6 @@ File Type,Element Type,Element Name
 .py,class,ToolResponse
 .py,variable,OPEN_WEBUI_DIR
 .py,variable,memory
-.py,variable,ws
 .py,variable,headless
 .py,function,search
 .py,function,update_user_permissions
@@ -1357,7 +1345,6 @@ File Type,Element Type,Element Name
 .py,function,healthcheck_with_db
 .py,function,get_images
 .py,function,inspect_websocket
-.py,variable,rf
 .py,function,merge_and_sort_query_results
 .py,variable,existing_nullable
 .py,variable,parameters_meta
@@ -1377,7 +1364,6 @@ File Type,Element Type,Element Name
 .py,variable,deleted
 .py,function,get_html_from_markdown
 .py,function,get_tools_valves_by_id
-.py,variable,id
 .py,function,get_ollama_versions
 .py,class,FeedbackResponse
 .py,class,FolderParentIdForm
@@ -1395,7 +1381,6 @@ File Type,Element Type,Element Name
 .py,function,send_post_request
 .py,variable,DEFAULT_CODE_INTERPRETER_PROMPT
 .py,variable,role
-.py,variable,p
 .py,variable,required_fields
 .py,variable,ADMIN_EMAIL
 .py,class,MessageForm
@@ -1457,7 +1442,6 @@ File Type,Element Type,Element Name
 .py,function,insert_new_tag
 .py,variable,TASK_MODEL_EXTERNAL
 .py,function,test_delete_all_user_chats
-.py,variable,xx
 .py,function,_result_to_search_result
 .py,class,SigninForm
 .py,class,Message
@@ -1621,7 +1605,6 @@ File Type,Element Type,Element Name
 .py,class,AbstractPostgresTest
 .py,variable,EMPTY_CONTENT
 .py,variable,MAX_FILE_SIZE
-.py,variable,_
 .py,variable,frontmatter_ended
 .py,function,test_get_admin_details
 .py,variable,base_url
@@ -2068,7 +2051,6 @@ File Type,Element Type,Element Name
 .py,variable,kernel_id
 .py,variable,serialized_value
 .py,function,insert_new_knowledge
-.py,variable,nx
 .py,variable,SERPSTACK_API_KEY
 .py,variable,auths
 .py,function,replace_prompt_variable
@@ -2366,7 +2348,6 @@ File Type,Element Type,Element Name
 .py,variable,cafile
 .py,variable,payload
 .py,variable,search_text
-.py,variable,i
 .py,function,update_image_config
 .py,function,clone_shared_chat_by_id
 .py,variable,last_active_at
@@ -2592,7 +2573,6 @@ File Type,Element Type,Element Name
 .py,variable,CHROMA_HTTP_SSL
 .py,variable,DB_URL
 .py,function,get_folders
-.py,variable,pw
 .py,variable,clientId
 .py,class,EmbeddingModelUpdateForm
 .py,variable,SERPLY_API_KEY
@@ -2684,7 +2664,6 @@ File Type,Element Type,Element Name
 .py,variable,should
 .py,variable,module_name
 .py,variable,field_defs
-.py,variable,d
 .py,variable,file_path
 .py,variable,UPLOAD_DIR
 .py,variable,pipe_id
@@ -2721,7 +2700,6 @@ File Type,Element Type,Element Name
 .py,function,_safe_process_url_sync
 .py,variable,content
 .py,class,EndpointFilter
-.py,variable,T
 .py,variable,QUERY_GENERATION_PROMPT_TEMPLATE
 .py,function,delete_memory_by_id
 .py,function,get_tools_specs

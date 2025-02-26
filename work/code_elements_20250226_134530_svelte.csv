@@ -167,7 +167,6 @@ File Type,Element Type,Element Name
 .svelte,variable,updateFileContentHandler
 .svelte,variable,button
 .svelte,variable,setToolIds
-.svelte,variable,x
 .svelte,variable,chatCompletedHandler
 .svelte,variable,editTextAreaElement
 .svelte,variable,getTagEmbeddings
@@ -241,7 +240,6 @@ File Type,Element Type,Element Name
 .svelte,variable,isFileSystemAccessSupported
 .svelte,function,normalizedValue
 .svelte,variable,rmsLevel
-.svelte,variable,n
 .svelte,function,initModel
 .svelte,svelte_prop,sources
 .svelte,variable,comment
@@ -469,7 +467,6 @@ File Type,Element Type,Element Name
 .svelte,variable,speedOptions
 .svelte,variable,toggleTitleAutoGenerate
 .svelte,svelte_prop,tippyOptions
-.svelte,variable,tr
 .svelte,variable,stopResponse
 .svelte,variable,TTS_AZURE_SPEECH_REGION
 .svelte,variable,isInHeading
@@ -505,7 +502,6 @@ File Type,Element Type,Element Name
 .svelte,variable,autoScroll
 .svelte,function,stopDurationCounter
 .svelte,variable,metaThemeColor
-.svelte,svelte_prop,y
 .svelte,svelte_prop,shareEnabled
 .svelte,variable,toggleResponseAutoCopy
 .svelte,svelte_prop,admin
@@ -572,7 +568,6 @@ File Type,Element Type,Element Name
 .svelte,svelte_prop,saveMessage
 .svelte,variable,prompt
 .svelte,variable,reaction
-.svelte,variable,tx
 .svelte,svelte_prop,chatActionHandler
 .svelte,variable,fileMaxCount
 .svelte,variable,showResetConfirm
@@ -584,7 +579,6 @@ File Type,Element Type,Element Name
 .svelte,variable,parentMessageId
 .svelte,svelte_prop,meta
 .svelte,variable,scrollHandler
-.svelte,variable,i
 .svelte,variable,audioContext
 .svelte,svelte_prop,eventTarget
 .svelte,variable,profileImageUrl
@@ -727,7 +721,6 @@ File Type,Element Type,Element Name
 .svelte,svelte_prop,history
 .svelte,variable,filtered
 .svelte,variable,url
-.svelte,variable,id
 .svelte,variable,enabled
 .svelte,svelte_prop,isFirstMessage
 .svelte,variable,_value
@@ -778,7 +771,6 @@ File Type,Element Type,Element Name
 .svelte,function,onMouseDown
 .svelte,variable,APIKey
 .svelte,variable,tagEventHandler
-.svelte,variable,bc
 .svelte,variable,boilerplate
 .svelte,variable,toggleSpeakMessage
 .svelte,variable,enableFullContent
@@ -1098,7 +1090,6 @@ File Type,Element Type,Element Name
 .svelte,variable,schedulers
 .svelte,variable,messagesContainerElement
 .svelte,variable,updateEmbeddingModelLoading
-.svelte,svelte_prop,x
 .svelte,variable,querystringValue
 .svelte,svelte_prop,selectedActionIds
 .svelte,variable,showUserProfile
@@ -1168,7 +1159,6 @@ File Type,Element Type,Element Name
 .svelte,variable,outOfRange
 .svelte,function,updateButtonPosition
 .svelte,variable,selectedModelId
-.svelte,variable,DB
 .svelte,variable,bufferLength
 .svelte,variable,errorMessage
 .svelte,variable,OpenAIUrl
@@ -1178,7 +1168,6 @@ File Type,Element Type,Element Name
 .svelte,variable,selectedModelIdx
 .svelte,variable,generateImage
 .svelte,variable,showManifestModal
-.svelte,variable,a
 .svelte,variable,outerClassName
 .svelte,variable,calculateRMS
 .svelte,variable,opacity
@@ -1307,7 +1296,6 @@ File Type,Element Type,Element Name
 .svelte,variable,sceneParentElement
 .svelte,variable,asyncFunction
 .svelte,variable,hasImages
-.svelte,variable,y
 .svelte,variable,processFrame
 .svelte,variable,shareEnabled
 .svelte,variable,copyCode
@@ -1477,7 +1465,6 @@ File Type,Element Type,Element Name
 .svelte,variable,imageUrls
 .svelte,variable,transcribeHandler
 .svelte,variable,showEditMemoryModal
-.svelte,variable,m
 .svelte,variable,addConnectionHandler
 .svelte,variable,selectedId
 .svelte,variable,showAdvanced
@@ -1575,7 +1562,6 @@ File Type,Element Type,Element Name
 .svelte,variable,updateConfigHandler
 .svelte,variable,loadingSpeech
 .svelte,variable,required
-.svelte,svelte_prop,id
 .svelte,variable,overlay
 .svelte,variable,showModel
 .svelte,variable,rerankingConfig
@@ -1605,7 +1591,6 @@ File Type,Element Type,Element Name
 .svelte,variable,filteredOptions
 .svelte,variable,loadSharedChat
 .svelte,variable,currentRow
-.svelte,variable,K
 .svelte,variable,deleteModelHandler
 .svelte,variable,preset
 .svelte,variable,_actions
