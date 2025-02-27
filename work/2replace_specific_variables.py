@@ -175,4 +175,4 @@ if __name__ == "__main__":
 
 # Look for the pattern open[\s_]?webui (which matches webui, webui, webui, etc.)
 # Replace all matches with "temp_name"
-# python replace_script.py /path/to/repository --replacement "webui" --file-types ".py,.js,.svelte" --exclude-dirs ".git,build"
+# & "C:/Program Files/Python312/python.exe" "c:/Users/harold.noble/Desktop/open-webui/code_helper/work/2replace_specific_variables.py" "C:/Users/harold.noble/Desktop/open-webui" --replacement "webui" --file-types ".py,.js,.svelte" --exclude-dirs ".git,build"

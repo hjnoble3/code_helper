@@ -1,4 +1,3 @@
-# %%
 import glob
 import subprocess
 import os
@@ -15,37 +14,60 @@ def get_files_excluding_code_helper(directory):
     all_files = [file for file in all_files if 'code_helper' not in file]  # Exclude 'code_helper' folder
     return all_files
 
+# Function to remove comments from a file while preserving code section headers
 
-# Function to remove comments from a file
+
 def remove_comments(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
-        lines = file.readlines()
+        content = file.read()
 
-    cleaned_lines = []
-    for line in lines:
-        if file_path.endswith('.ts'):
-            # Treat `//` followed by a space as a valid comment and remove it.
-            # We only remove lines that start with `//` followed by a space.
-            line = re.sub(r'//\s.*', '', line)  # Remove comments starting with `//` followed by space
+    if file_path.endswith('.ts'):
+        # Preserve comment blocks that act as section headers (multiple slashes followed by text)
+        # First, temporarily mark section headers to protect them
+        section_headers = re.findall(r'(/{3,}.*?$)', content, re.MULTILINE)
+        for i, header in enumerate(section_headers):
+            placeholder = f"__SECTION_HEADER_{i}__"
+            content = content.replace(header, placeholder)
 
-            # Remove TypeScript block comments (non-greedy match for block comments)
-            line = re.sub(r'/\*.*?\*/', '', line)
-        elif file_path.endswith('.svelte'):
-            # Treat `<!--` as an HTML-style comment and remove it.
-            line = re.sub(r'<!--.*?-->', '', line)  # Non-greedy match for Svelte HTML comments
+        # Remove normal single-line comments that aren't section headers
+        content = re.sub(r'(?<![:/])//\s.*?$', '', content, flags=re.MULTILINE)
 
-            # Treat `//` followed by a space as a valid comment in <script> tags and remove it.
-            line = re.sub(r'//\s.*', '', line)  # Remove comments starting with `//` followed by space
-            # Remove block comments in <script> or <style> tags
-            line = re.sub(r'/\*.*?\*/', '', line)
+        # Remove block comments while preserving code
+        content = re.sub(r'/\*.*?\*/', '', content, flags=re.DOTALL)
 
-        cleaned_lines.append(line)
+        # Restore section headers
+        for i, header in enumerate(section_headers):
+            placeholder = f"__SECTION_HEADER_{i}__"
+            content = content.replace(placeholder, header)
+
+    elif file_path.endswith('.svelte'):
+        # Handle Svelte HTML comments
+        content = re.sub(r'<!--.*?-->', '', content, flags=re.DOTALL)
+
+        # Handle script comments in Svelte
+        in_script = False
+        lines = content.split('\n')
+        for i, line in enumerate(lines):
+            if '<script' in line:
+                in_script = True
+            elif '</script>' in line:
+                in_script = False
+
+            if in_script:
+                # Only remove JS/TS comments in script tags
+                lines[i] = re.sub(r'(?<![:/])//\s.*?$', '', line)
+
+        content = '\n'.join(lines)
+
+        # Remove block comments in <script> or <style> tags
+        content = re.sub(r'/\*.*?\*/', '', content, flags=re.DOTALL)
 
     with open(file_path, 'w', encoding='utf-8') as file:
-        file.writelines(cleaned_lines)
-
+        file.write(content)
 
 # Function to run autoflake on Python files to remove unused imports and variables
+
+
 def run_autoflake_on_files(py_files):
     for file in py_files:
         print(f"Processing with autoflake: {file}")
@@ -66,8 +88,9 @@ def run_autoflake_on_files(py_files):
         with open(file, 'w', encoding='utf-8') as file_obj:
             file_obj.writelines(cleaned_lines)
 
-
 # Function to process the directory
+
+
 def process_directory(directory):
     # Get .ts, .svelte, and .py files excluding the 'code_helper' folder
     files = get_files_excluding_code_helper(directory)
@@ -91,5 +114,3 @@ def process_directory(directory):
 if __name__ == "__main__":
     project_dir = input("Enter the root directory of your project: ")
     process_directory(project_dir)
-
-# %%
