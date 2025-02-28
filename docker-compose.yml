@@ -5,7 +5,7 @@ services:
     image: ollama/ollama:latest
     container_name: ollama
     ports:
-      - "11434:11434"  # Expose Ollama's API port
+      - "11433:11434"  # Expose Ollama's API port
     volumes:
       - ollama_data:/root/.ollama     # Persist Ollama models
     command: serve                   # Start the Ollama server
