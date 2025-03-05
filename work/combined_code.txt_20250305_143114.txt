@@ -1,0 +1,1331 @@
+
+==================================================
+File: (app)\workspace\knowledge\+page.svelte
+==================================================
+
+<script>
+	import { onMount } from 'svelte';
+	import { knowledge } from '$lib/stores';
+
+	import { fetchKnowledgeBases } from '$lib/apis/knowledge';
+	import Knowledge from '$lib/components/workspace/Knowledge.svelte';
+
+	onMount(async () => {
+		await Promise.all([
+			(async () => {
+				knowledge.set(await fetchKnowledgeBases(localStorage.token));
+			})()
+		]);
+	});
+</script>
+
+{#if $knowledge !== null}
+	<Knowledge />
+{/if}
+
+
+
+==================================================
+File: (app)\workspace\knowledge\create\+page.svelte
+==================================================
+
+<script>
+	import createNewKnowledgeBases from '$lib/components/workspace/Knowledge/CreateKnowledgeBase.svelte';
+</script>
+
+<createNewKnowledgeBases />
+
+
+
+==================================================
+File: (app)\workspace\knowledge\[id]\+page.svelte
+==================================================
+
+<script>
+	import KnowledgeBase from '$lib/components/workspace/Knowledge/KnowledgeBase.svelte';
+</script>
+
+<KnowledgeBase />
+
+
+
+==================================================
+File: (app)\workspace\models\+page.svelte
+==================================================
+
+<script>
+	import { onMount } from 'svelte';
+	import { config, models, settings } from '$lib/stores';
+	import { fetchModels } from '$lib/apis';
+	import Models from '$lib/components/workspace/Models.svelte';
+
+	onMount(async () => {
+		await Promise.all([
+			(async () => {
+				models.set(
+					await fetchModels(
+						localStorage.token,
+						$config?.features?.enable_direct_connections && ($settings?.directConnections ?? null)
+					)
+				);
+			})()
+		]);
+	});
+</script>
+
+{#if $models !== null}
+	<Models />
+{/if}
+
+
+
+==================================================
+File: (app)\workspace\models\create\+page.svelte
+==================================================
+
+<script>
+	import { v4 as uuidv4 } from 'uuid';
+	import { toast } from 'svelte-sonner';
+	import { goto } from '$app/navigation';
+	import { config, models, settings } from '$lib/stores';
+
+	import { onMount, tick, getContext } from 'svelte';
+	import { createOllamaModel, fetchModelById } from '$lib/apis/models';
+	import { fetchModels } from '$lib/apis';
+
+	import ModelEditor from '$lib/components/workspace/Models/ModelEditor.svelte';
+
+	const i18n = getContext('i18n');
+
+	const onSubmit = async (modelInfo) => {
+		if ($models.find((m) => m.id === modelInfo.id)) {
+			toast.error(
+				`Error: A model with the ID '${modelInfo.id}' already exists. Please select a different ID to proceed.`
+			);
+			return;
+		}
+
+		if (modelInfo.id === '') {
+			toast.error('Error: Model ID cannot be empty. Please enter a valid ID to proceed.');
+			return;
+		}
+
+		if (modelInfo) {
+			const res = await createOllamaModel(localStorage.token, {
+				...modelInfo,
+				meta: {
+					...modelInfo.meta,
+					profile_image_url: modelInfo.meta.profile_image_url ?? '/static/favicon.png',
+					suggestion_prompts: modelInfo.meta.suggestion_prompts
+						? modelInfo.meta.suggestion_prompts.filter((prompt) => prompt.content !== '')
+						: null
+				},
+				params: { ...modelInfo.params }
+			}).catch((error) => {
+				toast.error(`${error}`);
+				return null;
+			});
+
+			if (res) {
+				await models.set(
+					await fetchModels(
+						localStorage.token,
+						$config?.features?.enable_direct_connections && ($settings?.directConnections ?? null)
+					)
+				);
+				toast.success($i18n.t('Model created successfully!'));
+				await goto('/workspace/models');
+			}
+		}
+	};
+
+	let model = null;
+
+	onMount(async () => {
+		window.addEventListener('message', async (event) => {
+			if (
+				!['https://webui.com', 'https://www.webui.com', 'http://localhost:5173'].includes(
+					event.origin
+				)
+			) {
+				return;
+			}
+
+			let data = JSON.parse(event.data);
+
+			if (data?.info) {
+				data = data.info;
+			}
+
+			model = data;
+		});
+
+		if (window.opener ?? false) {
+			window.opener.postMessage('loaded', '*');
+		}
+
+		if (sessionStorage.model) {
+			model = JSON.parse(sessionStorage.model);
+			sessionStorage.removeItem('model');
+		}
+	});
+</script>
+
+{#key model}
+	<ModelEditor {model} {onSubmit} />
+{/key}
+
+
+
+==================================================
+File: (app)\workspace\models\edit\+page.svelte
+==================================================
+
+<script>
+	import { toast } from 'svelte-sonner';
+	import { goto } from '$app/navigation';
+
+	import { onMount, getContext } from 'svelte';
+	const i18n = getContext('i18n');
+
+	import { page } from '$app/stores';
+	import { config, models, settings } from '$lib/stores';
+
+	import { fetchModelById, updateModel } from '$lib/apis/models';
+
+	import { fetchModels } from '$lib/apis';
+	import ModelEditor from '$lib/components/workspace/Models/ModelEditor.svelte';
+
+	let model = null;
+
+	onMount(async () => {
+		const _id = $page.url.searchParams.get('id');
+		if (_id) {
+			model = await fetchModelById(localStorage.token, _id).catch((e) => {
+				return null;
+			});
+
+			if (!model) {
+				goto('/workspace/models');
+			}
+		} else {
+			goto('/workspace/models');
+		}
+	});
+
+	const onSubmit = async (modelInfo) => {
+		const res = await updateModel(localStorage.token, modelInfo.id, modelInfo);
+
+		if (res) {
+			await models.set(
+				await fetchModels(
+					localStorage.token,
+					$config?.features?.enable_direct_connections && ($settings?.directConnections ?? null)
+				)
+			);
+			toast.success($i18n.t('Model updated successfully'));
+			await goto('/workspace/models');
+		}
+	};
+</script>
+
+{#if model}
+	<ModelEditor edit={true} {model} {onSubmit} />
+{/if}
+
+
+
+==================================================
+File: (app)\workspace\prompts\+page.svelte
+==================================================
+
+<script>
+	import Prompts from '$lib/components/workspace/Prompts.svelte';
+</script>
+
+<Prompts />
+
+
+
+==================================================
+File: (app)\workspace\prompts\create\+page.svelte
+==================================================
+
+<script lang="ts">
+	import { toast } from 'svelte-sonner';
+	import { goto } from '$app/navigation';
+	import { prompts } from '$lib/stores';
+	import { onMount, tick, getContext } from 'svelte';
+
+	const i18n = getContext('i18n');
+
+	import { createPrompt, fetchPrompts } from '$lib/apis/prompts';
+	import PromptEditor from '$lib/components/workspace/Prompts/PromptEditor.svelte';
+
+	let prompt = null;
+	const onSubmit = async (_prompt) => {
+		const prompt = await createPrompt(localStorage.token, _prompt).catch((error) => {
+			toast.error(`${error}`);
+			return null;
+		});
+
+		if (prompt) {
+			toast.success($i18n.t('Prompt created successfully'));
+
+			await prompts.set(await fetchPrompts(localStorage.token));
+			await goto('/workspace/prompts');
+		}
+	};
+
+	onMount(async () => {
+		window.addEventListener('message', async (event) => {
+			if (
+				!['https://webui.com', 'https://www.webui.com', 'http://localhost:5173'].includes(
+					event.origin
+				)
+			)
+				return;
+			const _prompt = JSON.parse(event.data);
+			console.log(_prompt);
+
+			prompt = {
+				title: _prompt.title,
+				command: _prompt.command,
+				content: _prompt.content,
+				access_control: null
+			};
+		});
+
+		if (window.opener ?? false) {
+			window.opener.postMessage('loaded', '*');
+		}
+
+		if (sessionStorage.prompt) {
+			const _prompt = JSON.parse(sessionStorage.prompt);
+
+			prompt = {
+				title: _prompt.title,
+				command: _prompt.command,
+				content: _prompt.content,
+				access_control: null
+			};
+			sessionStorage.removeItem('prompt');
+		}
+	});
+</script>
+
+{#key prompt}
+	<PromptEditor {prompt} {onSubmit} />
+{/key}
+
+
+
+==================================================
+File: (app)\workspace\prompts\edit\+page.svelte
+==================================================
+
+<script lang="ts">
+	import { toast } from 'svelte-sonner';
+	import { goto } from '$app/navigation';
+	import { prompts } from '$lib/stores';
+	import { onMount, tick, getContext } from 'svelte';
+
+	const i18n = getContext('i18n');
+
+	import { fetchPromptByCommand, fetchPrompts, updatePrompt } from '$lib/apis/prompts';
+	import { page } from '$app/stores';
+
+	import PromptEditor from '$lib/components/workspace/Prompts/PromptEditor.svelte';
+
+	let prompt = null;
+	const onSubmit = async (_prompt) => {
+		console.log(_prompt);
+		const prompt = await updatePrompt(localStorage.token, _prompt).catch((error) => {
+			toast.error(`${error}`);
+			return null;
+		});
+
+		if (prompt) {
+			toast.success($i18n.t('Prompt updated successfully'));
+			await prompts.set(await fetchPrompts(localStorage.token));
+			await goto('/workspace/prompts');
+		}
+	};
+
+	onMount(async () => {
+		const command = $page.url.searchParams.get('command');
+		if (command) {
+			const _prompt = await fetchPromptByCommand(
+				localStorage.token,
+				command.replace(/\//g, '')
+			).catch((error) => {
+				toast.error(`${error}`);
+				return null;
+			});
+
+			if (_prompt) {
+				prompt = {
+					title: _prompt.title,
+					command: _prompt.command,
+					content: _prompt.content,
+					access_control: _prompt?.access_control ?? null
+				};
+			} else {
+				goto('/workspace/prompts');
+			}
+		} else {
+			goto('/workspace/prompts');
+		}
+	});
+</script>
+
+{#if prompt}
+	<PromptEditor {prompt} {onSubmit} edit />
+{/if}
+
+
+
+==================================================
+File: (app)\workspace\tools\+page.svelte
+==================================================
+
+<script>
+	import { onMount } from 'svelte';
+
+	import Tools from '$lib/components/workspace/Tools.svelte';
+</script>
+
+<Tools />
+
+
+
+==================================================
+File: (app)\workspace\tools\create\+page.svelte
+==================================================
+
+<script>
+	import { goto } from '$app/navigation';
+	import { createTool, fetchTools } from '$lib/apis/tools';
+	import ToolkitEditor from '$lib/components/workspace/Tools/ToolkitEditor.svelte';
+	import { WEBUI_VERSION } from '$lib/constants';
+	import { tools } from '$lib/stores';
+	import { compareVersion, extractFrontmatter } from '$lib/utils';
+	import { getContext, onMount } from 'svelte';
+	import { toast } from 'svelte-sonner';
+
+	const i18n = getContext('i18n');
+
+	let mounted = false;
+	let clone = false;
+	let tool = null;
+
+	const saveHandler = async (data) => {
+		console.log(data);
+
+		const manifest = extractFrontmatter(data.content);
+		if (compareVersion(manifest?.required_WEBUI_version ?? '0.0.0', WEBUI_VERSION)) {
+			console.log('Version is lower than required');
+			toast.error(
+				$i18n.t('webui version (v{{WEBUI_VERSION}}) is lower than required version (v{{REQUIRED_VERSION}})', {
+					WEBUI_VERSION: WEBUI_VERSION,
+					REQUIRED_VERSION: manifest?.required_WEBUI_version ?? '0.0.0',
+				})
+			);
+			return;
+		}
+
+		const res = await createTool(localStorage.token, {
+			id: data.id,
+			name: data.name,
+			meta: data.meta,
+			content: data.content,
+			access_control: data.access_control,
+		}).catch((error) => {
+			toast.error(`${error}`);
+			return null;
+		});
+
+		if (res) {
+			toast.success($i18n.t('Tool created successfully'));
+			tools.set(await fetchTools(localStorage.token));
+
+			await goto('/workspace/tools');
+		}
+	};
+
+	onMount(() => {
+		window.addEventListener('message', async (event) => {
+			if (!['https://webui.com', 'https://www.webui.com', 'http://localhost:9999'].includes(event.origin)) return;
+
+			tool = JSON.parse(event.data);
+			console.log(tool);
+		});
+
+		if (window.opener ?? false) {
+			window.opener.postMessage('loaded', '*');
+		}
+
+		if (sessionStorage.tool) {
+			tool = JSON.parse(sessionStorage.tool);
+			sessionStorage.removeItem('tool');
+
+			console.log(tool);
+			clone = true;
+		}
+
+		mounted = true;
+	});
+</script>
+
+{#if mounted}
+	{#key tool?.content}
+		<ToolkitEditor
+			id={tool?.id ?? ''}
+			name={tool?.name ?? ''}
+			meta={tool?.meta ?? { description: '' }}
+			content={tool?.content ?? ''}
+			access_control={null}
+			{clone}
+			onSave={(value) => {
+				saveHandler(value);
+			}}
+		/>
+	{/key}
+{/if}
+
+
+
+==================================================
+File: (app)\workspace\tools\edit\+page.svelte
+==================================================
+
+<script>
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
+	import { fetchToolsById, fetchTools, updateToolById } from '$lib/apis/tools';
+	import Spinner from '$lib/components/common/Spinner.svelte';
+	import ToolkitEditor from '$lib/components/workspace/Tools/ToolkitEditor.svelte';
+	import { WEBUI_VERSION } from '$lib/constants';
+	import { tools } from '$lib/stores';
+	import { compareVersion, extractFrontmatter } from '$lib/utils';
+	import { getContext, onMount } from 'svelte';
+	import { toast } from 'svelte-sonner';
+
+	const i18n = getContext('i18n');
+
+	let tool = null;
+
+	const saveHandler = async (data) => {
+		console.log(data);
+
+		const manifest = extractFrontmatter(data.content);
+		if (compareVersion(manifest?.required_WEBUI_version ?? '0.0.0', WEBUI_VERSION)) {
+			console.log('Version is lower than required');
+			toast.error(
+				$i18n.t('webui version (v{{WEBUI_VERSION}}) is lower than required version (v{{REQUIRED_VERSION}})', {
+					WEBUI_VERSION: WEBUI_VERSION,
+					REQUIRED_VERSION: manifest?.required_WEBUI_version ?? '0.0.0',
+				})
+			);
+			return;
+		}
+
+		const res = await updateToolById(localStorage.token, tool.id, {
+			id: data.id,
+			name: data.name,
+			meta: data.meta,
+			content: data.content,
+			access_control: data.access_control,
+		}).catch((error) => {
+			toast.error(`${error}`);
+			return null;
+		});
+
+		if (res) {
+			toast.success($i18n.t('Tool updated successfully'));
+			tools.set(await fetchTools(localStorage.token));
+		}
+	};
+
+	onMount(async () => {
+		console.log('mounted');
+		const id = $page.url.searchParams.get('id');
+
+		if (id) {
+			tool = await fetchToolsById(localStorage.token, id).catch((error) => {
+				toast.error(`${error}`);
+				goto('/workspace/tools');
+				return null;
+			});
+
+			console.log(tool);
+		}
+	});
+</script>
+
+{#if tool}
+	<ToolkitEditor
+		edit={true}
+		id={tool.id}
+		name={tool.name}
+		meta={tool.meta}
+		content={tool.content}
+		accessControl={tool.access_control}
+		onSave={(value) => {
+			saveHandler(value);
+		}}
+	/>
+{:else}
+	<div class="flex items-center justify-center h-full">
+		<div class=" pb-16">
+			<Spinner />
+		</div>
+	</div>
+{/if}
+
+
+
+==================================================
+File: auth\+page.svelte
+==================================================
+
+<script>
+	import { toast } from 'svelte-sonner';
+
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
+	import { getContext, onMount } from 'svelte';
+
+	import { fetchBackendConfig } from '$lib/apis';
+	import { fetchSessionUser, signInUser, signUpUser } from '$lib/apis/auths';
+
+	import { WEBUI_BASE_URL } from '$lib/constants';
+	import { WEBUI_NAME, config, socket, user } from '$lib/stores';
+
+	import { generateInitialsImage } from '$lib/utils';
+
+	import Spinner from '$lib/components/common/Spinner.svelte';
+	import OnBoarding from '$lib/components/OnBoarding.svelte';
+
+	const i18n = getContext('i18n');
+
+	let loaded = false;
+
+	let mode = $config?.features.enable_ldap ? 'ldap' : 'signin';
+
+	let name = '';
+	let email = '';
+	let password = '';
+
+	let ldapUsername = '';
+
+	const querystringValue = (key) => {
+		const querystring = window.location.search;
+		const urlParams = new URLSearchParams(querystring);
+		return urlParams.get(key);
+	};
+
+	const setSessionUser = async (sessionUser) => {
+		if (sessionUser) {
+			console.log(sessionUser);
+			toast.success($i18n.t(`You're now logged in.`));
+			if (sessionUser.token) {
+				localStorage.token = sessionUser.token;
+			}
+
+			$socket.emit('user-join', { auth: { token: sessionUser.token } });
+			await user.set(sessionUser);
+			await config.set(await fetchBackendConfig());
+
+			const redirectPath = querystringValue('redirect') || '/';
+			goto(redirectPath);
+		}
+	};
+
+	const signInHandler = async () => {
+		const sessionUser = await signInUser(email, password).catch((error) => {
+			toast.error(`${error}`);
+			return null;
+		});
+
+		await setSessionUser(sessionUser);
+	};
+
+	const signUpHandler = async () => {
+		const sessionUser = await signUpUser(name, email, password, generateInitialsImage(name)).catch((error) => {
+			toast.error(`${error}`);
+			return null;
+		});
+
+		await setSessionUser(sessionUser);
+	};
+
+	const ldapSignInHandler = async () => {
+		const sessionUser = await signInUser(ldapUsername, password).catch((error) => {
+			toast.error(`${error}`);
+			return null;
+		});
+		await setSessionUser(sessionUser);
+	};
+
+	const submitHandler = async () => {
+		if (mode === 'ldap') {
+			await ldapSignInHandler();
+		} else if (mode === 'signin') {
+			await signInHandler();
+		} else {
+			await signUpHandler();
+		}
+	};
+
+	const checkOauthCallback = async () => {
+		if (!$page.url.hash) {
+			return;
+		}
+		const hash = $page.url.hash.substring(1);
+		if (!hash) {
+			return;
+		}
+		const params = new URLSearchParams(hash);
+		const token = params.get('token');
+		if (!token) {
+			return;
+		}
+		const sessionUser = await fetchSessionUser(token).catch((error) => {
+			toast.error(`${error}`);
+			return null;
+		});
+		if (!sessionUser) {
+			return;
+		}
+		localStorage.token = token;
+		await setSessionUser(sessionUser);
+	};
+
+	let onboarding = false;
+
+	onMount(async () => {
+		if ($user !== undefined) {
+			await goto('/');
+		}
+		await checkOauthCallback();
+
+		loaded = true;
+		if (($config?.features.auth_trusted_header ?? false) || $config?.features.auth === false) {
+			await signInHandler();
+		} else {
+			onboarding = $config?.onboarding ?? false;
+		}
+	});
+</script>
+
+<svelte:head>
+	<title>
+		{`${$WEBUI_NAME}`}
+	</title>
+</svelte:head>
+
+<OnBoarding
+	bind:show={onboarding}
+	getStartedHandler={() => {
+		onboarding = false;
+		mode = $config?.features.enable_ldap ? 'ldap' : 'signup';
+	}}
+/>
+
+<div class="w-full h-screen max-h-[100dvh] text-white relative">
+	<div class="w-full h-full absolute top-0 left-0 bg-white dark:bg-black"></div>
+
+	<div class="w-full absolute top-0 left-0 right-0 h-8 drag-region" />
+
+	{#if loaded}
+		<div class="fixed m-10 z-50">
+			<div class="flex space-x-2">
+				<div class=" self-center">
+					<img
+						crossorigin="anonymous"
+						src="{WEBUI_BASE_URL}/static/favicon.png"
+						class=" w-6 rounded-full dark:invert"
+						alt="logo"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="fixed bg-transparent min-h-screen w-full flex justify-center font-primary z-50 text-black dark:text-white"
+		>
+			<div class="w-full sm:max-w-md px-10 min-h-screen flex flex-col text-center">
+				{#if ($config?.features.auth_trusted_header ?? false) || $config?.features.auth === false}
+					<div class=" my-auto pb-10 w-full">
+						<div
+							class="flex items-center justify-center gap-3 text-xl sm:text-2xl text-center font-semibold dark:text-gray-200"
+						>
+							<div>
+								{$i18n.t('Signing in to {{WEBUI_NAME}}', { WEBUI_NAME: $WEBUI_NAME })}
+							</div>
+
+							<div>
+								<Spinner />
+							</div>
+						</div>
+					</div>
+				{:else}
+					<div class="  my-auto pb-10 w-full dark:text-gray-100">
+						<form
+							class=" flex flex-col justify-center"
+							on:submit={(e) => {
+								e.preventDefault();
+								submitHandler();
+							}}
+						>
+							<div class="mb-1">
+								<div class=" text-2xl font-medium">
+									{#if $config?.onboarding ?? false}
+										{$i18n.t(`Get started with {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
+									{:else if mode === 'ldap'}
+										{$i18n.t(`Sign in to {{WEBUI_NAME}} with LDAP`, { WEBUI_NAME: $WEBUI_NAME })}
+									{:else if mode === 'signin'}
+										{$i18n.t(`Sign in to {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
+									{:else}
+										{$i18n.t(`Sign up to {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
+									{/if}
+								</div>
+
+								{#if $config?.onboarding ?? false}
+									<div class=" mt-1 text-xs font-medium text-gray-500">
+										ⓘ {$WEBUI_NAME}
+										{$i18n.t(
+											'does not make any external connections, and your data stays securely on your locally hosted server.'
+										)}
+									</div>
+								{/if}
+							</div>
+
+							{#if $config?.features.enable_login_form || $config?.features.enable_ldap}
+								<div class="flex flex-col mt-4">
+									{#if mode === 'signup'}
+										<div class="mb-2">
+											<div class=" text-sm font-medium text-left mb-1">{$i18n.t('Name')}</div>
+											<input
+												bind:value={name}
+												type="text"
+												class="my-0.5 w-full text-sm outline-hidden bg-transparent"
+												autocomplete="name"
+												placeholder={$i18n.t('Enter Your Full Name')}
+												required
+											/>
+										</div>
+									{/if}
+
+									{#if mode === 'ldap'}
+										<div class="mb-2">
+											<div class=" text-sm font-medium text-left mb-1">{$i18n.t('Username')}</div>
+											<input
+												bind:value={ldapUsername}
+												type="text"
+												class="my-0.5 w-full text-sm outline-hidden bg-transparent"
+												autocomplete="username"
+												name="username"
+												placeholder={$i18n.t('Enter Your Username')}
+												required
+											/>
+										</div>
+									{:else}
+										<div class="mb-2">
+											<div class=" text-sm font-medium text-left mb-1">{$i18n.t('Email')}</div>
+											<input
+												bind:value={email}
+												type="email"
+												class="my-0.5 w-full text-sm outline-hidden bg-transparent"
+												autocomplete="email"
+												name="email"
+												placeholder={$i18n.t('Enter Your Email')}
+												required
+											/>
+										</div>
+									{/if}
+
+									<div>
+										<div class=" text-sm font-medium text-left mb-1">{$i18n.t('Password')}</div>
+
+										<input
+											bind:value={password}
+											type="password"
+											class="my-0.5 w-full text-sm outline-hidden bg-transparent"
+											placeholder={$i18n.t('Enter Your Password')}
+											autocomplete="current-password"
+											name="current-password"
+											required
+										/>
+									</div>
+								</div>
+							{/if}
+							<div class="mt-5">
+								{#if $config?.features.enable_login_form || $config?.features.enable_ldap}
+									{#if mode === 'ldap'}
+										<button
+											class="bg-gray-700/5 hover:bg-gray-700/10 dark:bg-gray-100/5 dark:hover:bg-gray-100/10 dark:text-gray-300 dark:hover:text-white transition w-full rounded-full font-medium text-sm py-2.5"
+											type="submit"
+										>
+											{$i18n.t('Authenticate')}
+										</button>
+									{:else}
+										<button
+											class="bg-gray-700/5 hover:bg-gray-700/10 dark:bg-gray-100/5 dark:hover:bg-gray-100/10 dark:text-gray-300 dark:hover:text-white transition w-full rounded-full font-medium text-sm py-2.5"
+											type="submit"
+										>
+											{mode === 'signin'
+												? $i18n.t('Sign in')
+												: ($config?.onboarding ?? false)
+													? $i18n.t('Create Admin Account')
+													: $i18n.t('Create Account')}
+										</button>
+
+										{#if $config?.features.enable_signup && !($config?.onboarding ?? false)}
+											<div class=" mt-4 text-sm text-center">
+												{mode === 'signin' ? $i18n.t("Don't have an account?") : $i18n.t('Already have an account?')}
+
+												<button
+													class=" font-medium underline"
+													type="button"
+													on:click={() => {
+														if (mode === 'signin') {
+															mode = 'signup';
+														} else {
+															mode = 'signin';
+														}
+													}}
+												>
+													{mode === 'signin' ? $i18n.t('Sign up') : $i18n.t('Sign in')}
+												</button>
+											</div>
+										{/if}
+									{/if}
+								{/if}
+							</div>
+						</form>
+
+						{#if Object.keys($config?.oauth?.providers ?? {}).length > 0}
+							<div class="inline-flex items-center justify-center w-full">
+								<hr class="w-32 h-px my-4 border-0 dark:bg-gray-100/10 bg-gray-700/10" />
+								{#if $config?.features.enable_login_form || $config?.features.enable_ldap}
+									<span class="px-3 text-sm font-medium text-gray-900 dark:text-white bg-transparent"
+										>{$i18n.t('or')}</span
+									>
+								{/if}
+
+								<hr class="w-32 h-px my-4 border-0 dark:bg-gray-100/10 bg-gray-700/10" />
+							</div>
+							<div class="flex flex-col space-y-2">
+								{#if $config?.oauth?.providers?.google}
+									<button
+										class="flex justify-center items-center bg-gray-700/5 hover:bg-gray-700/10 dark:bg-gray-100/5 dark:hover:bg-gray-100/10 dark:text-gray-300 dark:hover:text-white transition w-full rounded-full font-medium text-sm py-2.5"
+										on:click={() => {
+											window.location.href = `${WEBUI_BASE_URL}/oauth/google/login`;
+										}}
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 48 48"
+											class="size-6 mr-3"
+										>
+											<path
+												fill="#EA4335"
+												d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"
+											/><path
+												fill="#4285F4"
+												d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"
+											/><path
+												fill="#FBBC05"
+												d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"
+											/><path
+												fill="#34A853"
+												d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"
+											/><path
+												fill="none"
+												d="M0 0h48v48H0z"
+											/>
+										</svg>
+										<span>{$i18n.t('Continue with {{provider}}', { provider: 'Google' })}</span>
+									</button>
+								{/if}
+								{#if $config?.oauth?.providers?.microsoft}
+									<button
+										class="flex justify-center items-center bg-gray-700/5 hover:bg-gray-700/10 dark:bg-gray-100/5 dark:hover:bg-gray-100/10 dark:text-gray-300 dark:hover:text-white transition w-full rounded-full font-medium text-sm py-2.5"
+										on:click={() => {
+											window.location.href = `${WEBUI_BASE_URL}/oauth/microsoft/login`;
+										}}
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 21 21"
+											class="size-6 mr-3"
+										>
+											<rect
+												x="1"
+												y="1"
+												width="9"
+												height="9"
+												fill="#f25022"
+											/><rect
+												x="1"
+												y="11"
+												width="9"
+												height="9"
+												fill="#00a4ef"
+											/><rect
+												x="11"
+												y="1"
+												width="9"
+												height="9"
+												fill="#7fba00"
+											/><rect
+												x="11"
+												y="11"
+												width="9"
+												height="9"
+												fill="#ffb900"
+											/>
+										</svg>
+										<span>{$i18n.t('Continue with {{provider}}', { provider: 'Microsoft' })}</span>
+									</button>
+								{/if}
+								{#if $config?.oauth?.providers?.github}
+									<button
+										class="flex justify-center items-center bg-gray-700/5 hover:bg-gray-700/10 dark:bg-gray-100/5 dark:hover:bg-gray-100/10 dark:text-gray-300 dark:hover:text-white transition w-full rounded-full font-medium text-sm py-2.5"
+										on:click={() => {
+											window.location.href = `${WEBUI_BASE_URL}/oauth/github/login`;
+										}}
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											class="size-6 mr-3"
+										>
+											<path
+												fill="currentColor"
+												d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.92 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57C20.565 21.795 24 17.31 24 12c0-6.63-5.37-12-12-12z"
+											/>
+										</svg>
+										<span>{$i18n.t('Continue with {{provider}}', { provider: 'GitHub' })}</span>
+									</button>
+								{/if}
+								{#if $config?.oauth?.providers?.oidc}
+									<button
+										class="flex justify-center items-center bg-gray-700/5 hover:bg-gray-700/10 dark:bg-gray-100/5 dark:hover:bg-gray-100/10 dark:text-gray-300 dark:hover:text-white transition w-full rounded-full font-medium text-sm py-2.5"
+										on:click={() => {
+											window.location.href = `${WEBUI_BASE_URL}/oauth/oidc/login`;
+										}}
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="size-6 mr-3"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z"
+											/>
+										</svg>
+
+										<span
+											>{$i18n.t('Continue with {{provider}}', {
+												provider: $config?.oauth?.providers?.oidc ?? 'SSO',
+											})}</span
+										>
+									</button>
+								{/if}
+							</div>
+						{/if}
+
+						{#if $config?.features.enable_ldap && $config?.features.enable_login_form}
+							<div class="mt-2">
+								<button
+									class="flex justify-center items-center text-xs w-full text-center underline"
+									type="button"
+									on:click={() => {
+										if (mode === 'ldap') mode = ($config?.onboarding ?? false) ? 'signup' : 'signin';
+										else mode = 'ldap';
+									}}
+								>
+									<span>{mode === 'ldap' ? $i18n.t('Continue with Email') : $i18n.t('Continue with LDAP')}</span>
+								</button>
+							</div>
+						{/if}
+					</div>
+				{/if}
+			</div>
+		</div>
+	{/if}
+</div>
+
+
+
+==================================================
+File: error\+page.svelte
+==================================================
+
+<script>
+	import { goto } from '$app/navigation';
+	import { WEBUI_NAME, config } from '$lib/stores';
+	import { getContext, onMount } from 'svelte';
+
+	const i18n = getContext('i18n');
+
+	let loaded = false;
+
+	onMount(async () => {
+		if ($config) {
+			await goto('/');
+		}
+
+		loaded = true;
+	});
+</script>
+
+{#if loaded}
+	<div class="absolute w-full h-full flex z-50">
+		<div class="absolute rounded-xl w-full h-full backdrop-blur-sm flex justify-center">
+			<div class="m-auto pb-44 flex flex-col justify-center">
+				<div class="max-w-md">
+					<div class="text-center text-2xl font-medium z-50">
+						{$i18n.t('{{webuiName}} Backend Required', { webuiName: $WEBUI_NAME })}
+					</div>
+
+					<div class=" mt-4 text-center text-sm w-full">
+						{$i18n.t(
+							"Oops! You're using an unsupported method (frontend only). Please serve the backend."
+						)}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{/if}
+
+
+
+==================================================
+File: s\[id]\+page.svelte
+==================================================
+
+<script lang="ts">
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
+	import { getContext, tick } from 'svelte';
+
+	import dayjs from 'dayjs';
+
+	import { chatId, config, models, settings, WEBUI_NAME } from '$lib/stores';
+	import { convertMessagesToHistory, createMessagesList } from '$lib/utils';
+
+	import { fetchChatByShareId } from '$lib/apis/chats';
+
+	import Messages from '$lib/components/chat/Messages.svelte';
+
+	import { fetchModels } from '$lib/apis';
+	import { getUserById } from '$lib/apis/users';
+	import localizedFormat from 'dayjs/plugin/localizedFormat';
+	import { toast } from 'svelte-sonner';
+
+	const i18n = getContext('i18n');
+	dayjs.extend(localizedFormat);
+
+	let loaded = false;
+
+	let autoScroll = true;
+	let processing = '';
+	let messagesContainerElement: HTMLDivElement;
+
+	let showModelSelector = false;
+	let selectedModels = [''];
+
+	let chat = null;
+	let user = null;
+
+	let title = '';
+	let files = [];
+
+	let messages = [];
+	let history = {
+		messages: {},
+		currentId: null,
+	};
+
+	$: messages = createMessagesList(history, history.currentId);
+
+	$: if ($page.params.id) {
+		(async () => {
+			if (await loadSharedChat()) {
+				await tick();
+				loaded = true;
+			} else {
+				await goto('/');
+			}
+		})();
+	}
+
+	//////////////////////////
+
+	//////////////////////////
+
+	const loadSharedChat = async () => {
+		await models.set(
+			await fetchModels(
+				localStorage.token,
+				$config?.features?.enable_direct_connections && ($settings?.directConnections ?? null)
+			)
+		);
+		await chatId.set($page.params.id);
+		chat = await fetchChatByShareId(localStorage.token, $chatId).catch(async (error) => {
+			await goto('/');
+			return null;
+		});
+
+		if (chat) {
+			user = await getUserById(localStorage.token, chat.user_id).catch((error) => {
+				console.error(error);
+				return null;
+			});
+
+			const chatContent = chat.chat;
+
+			if (chatContent) {
+				console.log(chatContent);
+
+				selectedModels =
+					(chatContent?.models ?? undefined) !== undefined ? chatContent.models : [chatContent.models ?? ''];
+				history =
+					(chatContent?.history ?? undefined) !== undefined
+						? chatContent.history
+						: convertMessagesToHistory(chatContent.messages);
+				title = chatContent.title;
+
+				autoScroll = true;
+				await tick();
+
+				if (messages.length > 0) {
+					history.messages[messages.at(-1).id].done = true;
+				}
+				await tick();
+
+				return true;
+			} else {
+				return null;
+			}
+		}
+	};
+
+	const cloneSharedChat = async () => {
+		if (!chat) return;
+
+		const res = await cloneSharedChat(localStorage.token, chat.id).catch((error) => {
+			toast.error(`${error}`);
+			return null;
+		});
+
+		if (res) {
+			goto(`/c/${res.id}`);
+		}
+	};
+</script>
+
+<svelte:head>
+	<title>
+		{title ? `${title.length > 30 ? `${title.slice(0, 30)}...` : title} | ${$WEBUI_NAME}` : `${$WEBUI_NAME}`}
+	</title>
+</svelte:head>
+
+{#if loaded}
+	<div class="h-screen max-h-[100dvh] w-full flex flex-col text-gray-700 dark:text-gray-100 bg-white dark:bg-gray-900">
+		<div class="flex flex-col flex-auto justify-center relative">
+			<div
+				class=" flex flex-col w-full flex-auto overflow-auto h-0"
+				id="messages-container"
+			>
+				<div class="pt-5 px-2 w-full max-w-5xl mx-auto">
+					<div class="px-3">
+						<div class=" text-2xl font-semibold line-clamp-1">
+							{title}
+						</div>
+
+						<div class="flex text-sm justify-between items-center mt-1">
+							<div class="text-gray-400">
+								{dayjs(chat.chat.timestamp).format('LLL')}
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" h-full w-full flex flex-col py-2">
+					<div class="">
+						<Messages
+							className="h-full flex pt-4 pb-8"
+							{user}
+							chatId={$chatId}
+							readOnly={true}
+							{selectedModels}
+							{processing}
+							bind:history
+							bind:messages
+							bind:autoScroll
+							bottomPadding={files.length > 0}
+							sendPrompt={() => {}}
+							continueResponse={() => {}}
+							regenerateResponse={() => {}}
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="absolute bottom-0 right-0 left-0 flex justify-center w-full bg-linear-to-b from-transparent to-white dark:to-gray-900"
+			>
+				<div class="pb-5">
+					<button
+						class="px-4 py-2 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+						on:click={cloneSharedChat}
+					>
+						{$i18n.t('Clone Chat')}
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+{/if}
+
+
+
+==================================================
+File: watch\+page.svelte
+==================================================
+
+<script>
+	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
+
+	onMount(() => {
+
+		const params = new URLSearchParams(window.location.search);
+
+
+		if (params.has('v')) {
+
+			const videoId = params.get('v');
+
+
+
+			goto(`/?youtube=${encodeURIComponent(videoId)}`);
+		} else {
+
+			goto('/');
+		}
+	});
+</script>
+
+
