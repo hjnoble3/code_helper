@@ -314,3 +314,222 @@ C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\routes\auth\+page.svelte
 C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\routes\error\+page.svelte
 C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\routes\s\[id]\+page.svelte
 C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\routes\watch\+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Badge.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Banner.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Checkbox.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\CodeEditor.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Collapsible.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\ConfirmDialog.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\DragGhost.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Drawer.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Dropdown.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\FileItem.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\FileItemModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Folder.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Image.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\ImagePreview.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Loader.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Marquee.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Modal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Overlay.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Pagination.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\RichTextInput.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Selector.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\SensitiveInput.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Sidebar.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\SlideShow.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Spinner.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\SVGPanZoom.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Switch.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Tags.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Textarea.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Tooltip.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Valves.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Tags\TagInput.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy\app\src\lib\components\common\Tags\TagList.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/audio/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/auths/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/chats/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/configs/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/evaluations/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/files/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/folders/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/images/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/memories/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/ollama/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/openai/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/retrieval/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/streaming/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/users/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/apis/utils/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/AddConnectionModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/AddFilesPlaceholder.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/ChangelogModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/NotificationToast.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/OnBoarding.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Evaluations.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Evaluations/FeedbackMenu.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Evaluations/Feedbacks.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Evaluations/Leaderboard.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Functions.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Functions/FunctionEditor.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Functions/FunctionMenu.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Audio.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/CodeExecution.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Connections.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Connections/ManageOllamaModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Connections/OllamaConnection.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Connections/OpenAIConnection.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Database.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Documents.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Evaluations.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Evaluations/ArenaModelModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Evaluations/Model.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/General.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Images.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Interface.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Models.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Models/ConfigureModelsModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Models/Manage/ManageMultipleOllama.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Models/Manage/ManageOllama.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Models/ManageModelsModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Models/ModelList.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/Pipelines.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Settings/WebSearch.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/Groups.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/Groups/AddGroupModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/Groups/Display.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/Groups/EditGroupModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/Groups/GroupItem.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/Groups/Permissions.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/Groups/Users.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/UserList.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/UserList/AddUserModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/UserList/EditUserModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/admin/Users/UserList/UserChatsModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/app/AppSidebar.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Artifacts.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Chat.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/ChatControls.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/ChatPlaceholder.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/ContentRenderer/FloatingButtons.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/MessageInput/CallOverlay.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/MessageInput/CallOverlay/VideoInputMenu.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/MessageInput/Commands.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/MessageInput/Commands/Knowledge.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/MessageInput/Commands/Models.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/MessageInput/Commands/Prompts.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/MessageInput/FilesOverlay.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/MessageInput/InputMenu.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/MessageInput/VoiceRecording.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/Citations.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/CitationsModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/CodeBlock.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/CodeExecutionModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/CodeExecutions.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/ContentRenderer.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/Error.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/Markdown.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/Markdown/KatexRenderer.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/Markdown/MarkdownInlineTokens.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/Markdown/MarkdownTokens.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/Markdown/Source.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/Message.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/MultiResponseMessages.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/Name.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/ProfileImage.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/RateComment.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/ResponseMessage.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/ResponseMessage/WebSearchResults.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/Skeleton.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Messages/UserMessage.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/ModelSelector.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/ModelSelector/Selector.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Navbar.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Overview.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Overview/Flow.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Overview/Node.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Placeholder.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/About.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Account.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Account/UpdatePassword.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Advanced/AdvancedParams.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Audio.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Chats.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Connections.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Connections/Connection.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/General.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Interface.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Personalization.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Personalization/AddMemoryModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Personalization/EditMemoryModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Settings/Personalization/ManageModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/SettingsModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/ShareChatModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/ShortcutsModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Suggestions.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/chat/Tags.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Help.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Help/HelpMenu.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Navbar.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Navbar/Menu.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Overlay/AccountPending.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Sidebar.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Sidebar/ArchivedChatsModal.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Sidebar/ChatItem.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Sidebar/ChatMenu.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Sidebar/Folders.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Sidebar/Folders/FolderMenu.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Sidebar/RecursiveFolder.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Sidebar/SearchInput.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/Sidebar/UserMenu.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/layout/UpdateInfoToast.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/components/workspace/Models.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/stores/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/types/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/utils/characters/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/utils/google-drive-picker.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/utils/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/utils/marked/extension.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/utils/marked/katex-extension.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/utils/onedrive-file-picker.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/utils/rag/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/utils/transitions/index.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/workers/KokoroWorker.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/workers/kokoro.worker.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/lib/workers/pyodide.worker.ts
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/+layout.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/admin/+layout.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/admin/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/admin/evaluations/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/admin/functions/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/admin/functions/create/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/admin/functions/edit/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/admin/settings/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/admin/users/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/c/[id]/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/home/+layout.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/+layout.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/functions/create/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/knowledge/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/knowledge/[id]/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/knowledge/create/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/models/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/models/create/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/models/edit/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/tools/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/tools/create/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/(app)/workspace/tools/edit/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/+error.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/+layout.js
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/+layout.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/auth/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/error/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/s/[id]/+page.svelte
+C:\Users\harold.noble\Desktop\open-webui - Copy - Copy - Copy\app/src/routes/watch/+page.svelte
