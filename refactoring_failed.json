@@ -1,0 +1,48 @@
+{
+  "failed_files": {
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\index.ts": {
+      "timestamp": 1741603069.2343378,
+      "reason": "Refactoring failed"
+    },
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\index.ts": {
+      "timestamp": 1741603070.3193493,
+      "reason": "Refactoring failed"
+    },
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\pyodide\\pyodideKernel.ts": {
+      "timestamp": 1741603071.4263797,
+      "reason": "Refactoring failed"
+    },
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\pyodide\\pyodideKernel.worker.ts": {
+      "timestamp": 1741604188.323622,
+      "reason": "Refactoring failed"
+    },
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\stores\\index.ts": {
+      "timestamp": 1741603073.6161528,
+      "reason": "Refactoring failed"
+    },
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\utils\\index.ts": {
+      "timestamp": 1741604706.2471402,
+      "reason": "Refactoring failed"
+    },
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\workers\\pyodide.worker.ts": {
+      "timestamp": 1741604190.6352434,
+      "reason": "Refactoring failed"
+    },
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\audio\\index.ts": {
+      "timestamp": 1741604191.72091,
+      "reason": "Refactoring failed"
+    },
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\auths\\index.ts": {
+      "timestamp": 1741604192.8073745,
+      "reason": "Refactoring failed"
+    },
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\channels\\index.ts": {
+      "timestamp": 1741604193.9706795,
+      "reason": "Refactoring failed"
+    },
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\chats\\index.ts": {
+      "timestamp": 1741604195.0608456,
+      "reason": "Refactoring failed"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "processed_files": [
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\config\\vite.config.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\app.d.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\constants.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\index.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\index.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\pyodide\\pyodideKernel.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\stores\\index.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\types\\index.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\utils\\google-drive-picker.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\utils\\onedrive-file-picker.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\utils\\_template_old.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\workers\\kokoro.worker.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\workers\\KokoroWorker.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\pyodide\\pyodideKernel.worker.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\workers\\pyodide.worker.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\audio\\index.ts"
+  ],
+  "total_cost": 0.18440800000000002
+}

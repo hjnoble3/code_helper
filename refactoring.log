@@ -1,0 +1,1191 @@
+2025-03-09 21:58:31,882 - refactoring - WARNING - Directory not found or not a directory: C:\Users\HJN\Desktop\open-webui\src
+2025-03-09 21:58:31,882 - refactoring - INFO - Found 0 files to process after applying skip rules
+2025-03-09 21:58:31,884 - refactoring - WARNING - Git root C:\Users\HJN\Desktop\open-webui is not a git repository. Disabling auto-commit.
+2025-03-09 21:58:31,884 - refactoring - INFO - Found 0 unprocessed files out of 0 total files
+2025-03-09 21:58:31,885 - refactoring - INFO - Processing 0 files
+2025-03-09 21:58:31,885 - refactoring - INFO - No files to process
+2025-03-09 21:59:21,461 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-09 21:59:21,463 - refactoring - WARNING - Git root C:\Users\HJN\Desktop\open-webui is not a git repository. Disabling auto-commit.
+2025-03-09 21:59:21,464 - refactoring - INFO - Found 279 unprocessed files out of 279 total files
+2025-03-09 21:59:21,464 - refactoring - INFO - Processing 1 files
+2025-03-09 21:59:22,475 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\config\vite.config.ts (attempt 1)...
+2025-03-09 21:59:32,322 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\config\vite.config.ts
+2025-03-09 21:59:32,323 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\config\vite.config.ts - Cost: $0.007204, Total: $0.007204
+2025-03-09 21:59:33,332 - refactoring - INFO - Completed processing 1 files
+2025-03-09 22:01:13,393 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-09 22:01:13,395 - refactoring - WARNING - Git root C:\Users\HJN\Desktop\open-webui is not a git repository. Disabling auto-commit.
+2025-03-09 22:01:13,395 - refactoring - INFO - Found 278 unprocessed files out of 279 total files
+2025-03-09 22:01:13,396 - refactoring - INFO - Processing 9 files
+2025-03-09 22:01:14,402 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\app.d.ts (attempt 1)...
+2025-03-09 22:01:26,075 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\app.d.ts
+2025-03-09 22:01:26,076 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\app.d.ts - Cost: $0.005874, Total: $0.013078
+2025-03-09 22:01:28,112 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts (attempt 1)...
+2025-03-09 22:01:48,642 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts
+2025-03-09 22:01:48,642 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts - Cost: $0.014656, Total: $0.027734
+2025-03-09 22:01:50,660 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts (attempt 1)...
+2025-03-09 22:01:53,713 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts
+2025-03-09 22:01:53,714 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts - Cost: $0.002334, Total: $0.030068
+2025-03-09 22:01:55,742 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts (attempt 1)...
+2025-03-09 22:02:55,693 - refactoring - ERROR - API error: 520, <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Web server is returning an unknown error</span>
+              <span class="code-label">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-03-10 02:02:54 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Ashburn</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">api.x.ai</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                          <h3 class="text-15 font-semibold mb-2">If you are a visitor of this website:</h3>
+      <p class="mb-6">Please try again in a few minutes.</p>
+
+      <h3 class="text-15 font-semibold mb-2">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel="noopener noreferrer" href="https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">91df3a1398139c7e</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">24.166.213.165</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+2025-03-09 22:02:56,698 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts (attempt 2)...
+2025-03-09 22:03:56,749 - refactoring - ERROR - API error: 520, <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Web server is returning an unknown error</span>
+              <span class="code-label">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-03-10 02:03:55 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Ashburn</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">api.x.ai</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                          <h3 class="text-15 font-semibold mb-2">If you are a visitor of this website:</h3>
+      <p class="mb-6">Please try again in a few minutes.</p>
+
+      <h3 class="text-15 font-semibold mb-2">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel="noopener noreferrer" href="https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">91df3b908d799c7e</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">24.166.213.165</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+2025-03-09 22:03:57,756 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts (attempt 3)...
+2025-03-09 22:04:38,732 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts
+2025-03-09 22:04:38,734 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts - Cost: $0.037130, Total: $0.067198
+2025-03-09 22:04:40,766 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts (attempt 1)...
+2025-03-09 22:05:18,279 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts
+2025-03-09 22:05:18,280 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts - Cost: $0.022184, Total: $0.089382
+2025-03-09 22:05:20,299 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts (attempt 1)...
+2025-03-09 22:05:47,968 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts
+2025-03-09 22:05:47,968 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts - Cost: $0.015872, Total: $0.105254
+2025-03-09 22:05:49,984 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts (attempt 1)...
+2025-03-09 22:06:31,534 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts
+2025-03-09 22:06:31,535 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts - Cost: $0.027064, Total: $0.132318
+2025-03-09 22:06:33,561 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\types\index.ts (attempt 1)...
+2025-03-09 22:06:42,687 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\types\index.ts
+2025-03-09 22:06:42,688 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\types\index.ts - Cost: $0.006702, Total: $0.139020
+2025-03-09 22:06:44,714 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\google-drive-picker.ts (attempt 1)...
+2025-03-09 22:07:29,166 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\google-drive-picker.ts
+2025-03-09 22:07:29,166 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\google-drive-picker.ts - Cost: $0.025592, Total: $0.164612
+2025-03-09 22:07:30,180 - refactoring - INFO - Completed processing 9 files
+2025-03-09 22:11:36,563 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-09 22:11:36,566 - refactoring - INFO - Found 269 unprocessed files out of 279 total files
+2025-03-09 22:11:36,566 - refactoring - INFO - Processing 27 files
+2025-03-09 22:11:37,583 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1)...
+2025-03-09 22:12:37,697 - refactoring - ERROR - API error: 520, <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Web server is returning an unknown error</span>
+              <span class="code-label">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-03-10 02:12:36 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Ashburn</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">api.x.ai</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                          <h3 class="text-15 font-semibold mb-2">If you are a visitor of this website:</h3>
+      <p class="mb-6">Please try again in a few minutes.</p>
+
+      <h3 class="text-15 font-semibold mb-2">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel="noopener noreferrer" href="https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">91df4849095e1315</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">24.166.213.165</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+2025-03-09 22:12:38,708 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 2)...
+2025-03-10 06:23:59,261 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:23:59,262 - refactoring - INFO - Found 279 unprocessed files out of 279 total files
+2025-03-10 06:23:59,263 - refactoring - INFO - Processing 3 files
+2025-03-10 06:24:00,279 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\config\vite.config.ts (attempt 1)...
+2025-03-10 06:24:06,820 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\config\vite.config.ts
+2025-03-10 06:24:06,821 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\config\vite.config.ts - Cost: $0.004888, Total: $0.004888
+2025-03-10 06:24:08,837 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\app.d.ts (attempt 1)...
+2025-03-10 06:24:09,948 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\app.d.ts
+2025-03-10 06:24:09,948 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\app.d.ts - Cost: $0.001500, Total: $0.006388
+2025-03-10 06:24:11,976 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts (attempt 1)...
+2025-03-10 06:24:21,442 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts
+2025-03-10 06:24:21,443 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts - Cost: $0.007910, Total: $0.014298
+2025-03-10 06:24:22,462 - refactoring - INFO - Final commit of 3 files
+2025-03-10 06:24:23,229 - refactoring - INFO - Successfully committed 3 files: [ai-improvements 132404f86] Refactor 3 files using AI
+ 3 files changed, 27 insertions(+), 32 deletions(-)
+
+2025-03-10 06:24:23,230 - refactoring - INFO - Completed processing 3 files
+2025-03-10 06:25:10,739 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:25:10,740 - refactoring - INFO - Found 279 unprocessed files out of 279 total files
+2025-03-10 06:25:10,740 - refactoring - INFO - Processing 4 files
+2025-03-10 06:25:11,754 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\config\vite.config.ts (attempt 1)...
+2025-03-10 06:25:17,817 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\config\vite.config.ts
+2025-03-10 06:25:17,817 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\config\vite.config.ts - Cost: $0.004950, Total: $0.004950
+2025-03-10 06:25:19,842 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\app.d.ts (attempt 1)...
+2025-03-10 06:25:21,120 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\app.d.ts
+2025-03-10 06:25:21,120 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\app.d.ts - Cost: $0.001506, Total: $0.006456
+2025-03-10 06:25:23,159 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts (attempt 1)...
+2025-03-10 06:25:32,766 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts
+2025-03-10 06:25:32,766 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts - Cost: $0.007954, Total: $0.014410
+2025-03-10 06:25:34,799 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts (attempt 1)...
+2025-03-10 06:25:36,995 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts
+2025-03-10 06:25:36,996 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts - Cost: $0.002118, Total: $0.016528
+2025-03-10 06:25:38,015 - refactoring - INFO - Final commit of 2 files
+2025-03-10 06:25:38,381 - refactoring - INFO - Successfully committed 2 files: [ai-improvements 7feabc87f] Refactor 2 files using AI
+ 2 files changed, 39 insertions(+), 12 deletions(-)
+
+2025-03-10 06:25:38,383 - refactoring - INFO - Completed processing 4 files
+2025-03-10 06:27:17,622 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:27:17,625 - refactoring - INFO - Found 275 unprocessed files out of 279 total files
+2025-03-10 06:27:17,625 - refactoring - INFO - Processing 25 files
+2025-03-10 06:27:18,636 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts (attempt 1)...
+2025-03-10 06:28:18,277 - refactoring - ERROR - API error: 520, <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Web server is returning an unknown error</span>
+              <span class="code-label">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-03-10 10:28:16 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Columbus</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">api.x.ai</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                          <h3 class="text-15 font-semibold mb-2">If you are a visitor of this website:</h3>
+      <p class="mb-6">Please try again in a few minutes.</p>
+
+      <h3 class="text-15 font-semibold mb-2">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel="noopener noreferrer" href="https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">91e21e61bca3cf3e</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">24.166.213.165</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+2025-03-10 06:28:19,287 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts (attempt 2)...
+2025-03-10 06:28:52,534 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts
+2025-03-10 06:28:52,534 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts - Cost: $0.031544, Total: $0.048072
+2025-03-10 06:28:54,580 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts (attempt 1)...
+2025-03-10 06:29:06,609 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts
+2025-03-10 06:29:06,611 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts - Cost: $0.009168, Total: $0.057240
+2025-03-10 06:29:08,647 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts (attempt 1)...
+2025-03-10 06:29:26,849 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts
+2025-03-10 06:29:26,850 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts - Cost: $0.012266, Total: $0.069506
+2025-03-10 06:29:28,875 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts (attempt 1)...
+2025-03-10 06:29:58,716 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts
+2025-03-10 06:29:58,716 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts - Cost: $0.019048, Total: $0.088554
+2025-03-10 06:29:59,091 - refactoring - INFO - Successfully committed 4 files: [ai-improvements e71f1a148] Refactor 4 files using AI
+ 4 files changed, 424 insertions(+), 1398 deletions(-)
+
+2025-03-10 06:30:01,108 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\types\index.ts (attempt 1)...
+2025-03-10 06:30:04,011 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\types\index.ts
+2025-03-10 06:30:04,011 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\types\index.ts - Cost: $0.002156, Total: $0.090710
+2025-03-10 06:30:06,082 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\google-drive-picker.ts (attempt 1)...
+2025-03-10 06:30:38,382 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\google-drive-picker.ts
+2025-03-10 06:30:38,383 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\google-drive-picker.ts - Cost: $0.020846, Total: $0.111556
+2025-03-10 06:30:40,407 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1)...
+2025-03-10 06:31:40,264 - refactoring - ERROR - API error: 520, <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Web server is returning an unknown error</span>
+              <span class="code-label">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-03-10 10:31:38 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Columbus</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">api.x.ai</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                          <h3 class="text-15 font-semibold mb-2">If you are a visitor of this website:</h3>
+      <p class="mb-6">Please try again in a few minutes.</p>
+
+      <h3 class="text-15 font-semibold mb-2">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel="noopener noreferrer" href="https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">91e2234e3f0bcf3e</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">24.166.213.165</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+2025-03-10 06:31:41,276 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 2)...
+2025-03-10 06:32:41,253 - refactoring - ERROR - API error: 520, <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Web server is returning an unknown error</span>
+              <span class="code-label">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-03-10 10:32:39 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Columbus</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">api.x.ai</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                          <h3 class="text-15 font-semibold mb-2">If you are a visitor of this website:</h3>
+      <p class="mb-6">Please try again in a few minutes.</p>
+
+      <h3 class="text-15 font-semibold mb-2">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel="noopener noreferrer" href="https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">91e224caacb6cf3e</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">24.166.213.165</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+2025-03-10 06:37:47,944 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:37:47,946 - refactoring - INFO - Found 276 unprocessed files out of 279 total files
+2025-03-10 06:37:47,946 - refactoring - INFO - Processing 5 files
+2025-03-10 06:37:48,955 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts (attempt 1/4)...
+2025-03-10 06:37:49,233 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131585 tokens: 513 tokens from the i...
+2025-03-10 06:37:49,234 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts
+2025-03-10 06:37:50,245 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts (attempt 1/4)...
+2025-03-10 06:37:50,318 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 133069 tokens: 1997 tokens from the ...
+2025-03-10 06:37:50,318 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts
+2025-03-10 06:37:51,338 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts (attempt 1/4)...
+2025-03-10 06:37:51,425 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 132176 tokens: 1104 tokens from the ...
+2025-03-10 06:37:51,426 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts
+2025-03-10 06:37:52,438 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts (attempt 1/4)...
+2025-03-10 06:37:52,515 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 132444 tokens: 1372 tokens from the ...
+2025-03-10 06:37:52,516 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts
+2025-03-10 06:37:53,523 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts (attempt 1/4)...
+2025-03-10 06:37:53,614 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 133021 tokens: 1949 tokens from the ...
+2025-03-10 06:37:53,615 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts
+2025-03-10 06:37:53,619 - refactoring - INFO - Completed processing 0 files
+2025-03-10 06:40:37,074 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:40:37,076 - refactoring - INFO - Found 276 unprocessed files out of 279 total files
+2025-03-10 06:40:37,077 - refactoring - INFO - Processing 5 files
+2025-03-10 06:40:38,084 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts (attempt 1/4)...
+2025-03-10 06:40:40,368 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts
+2025-03-10 06:40:40,368 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts - Cost: $0.002216, Total: $0.016514
+2025-03-10 06:40:42,397 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts (attempt 1/4)...
+2025-03-10 06:41:13,754 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts
+2025-03-10 06:41:13,754 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts - Cost: $0.020094, Total: $0.036608
+2025-03-10 06:41:15,778 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts (attempt 1/4)...
+2025-03-10 06:41:29,886 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts
+2025-03-10 06:41:29,886 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.ts - Cost: $0.009438, Total: $0.046046
+2025-03-10 06:41:31,902 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts (attempt 1/4)...
+2025-03-10 06:41:32,004 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131148 tokens: 1372 tokens from the ...
+2025-03-10 06:41:32,004 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts
+2025-03-10 06:41:33,018 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts (attempt 1/4)...
+2025-03-10 06:42:04,905 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts
+2025-03-10 06:42:04,906 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\stores\index.ts - Cost: $0.019408, Total: $0.065454
+2025-03-10 06:42:05,920 - refactoring - INFO - Final commit of 3 files
+2025-03-10 06:42:06,297 - refactoring - INFO - Successfully committed 3 files: [ai-improvements 0f8689732] Refactor 3 files using AI
+ 3 files changed, 8 insertions(+), 11 deletions(-)
+
+2025-03-10 06:42:06,297 - refactoring - INFO - Completed processing 4 files
+2025-03-10 06:43:39,104 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:43:39,106 - refactoring - INFO - Found 269 unprocessed files out of 279 total files
+2025-03-10 06:43:39,107 - refactoring - INFO - Processing 5 files
+2025-03-10 06:43:40,122 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1/4)...
+2025-03-10 06:43:40,449 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131477 tokens: 8362 tokens from the ...
+2025-03-10 06:43:40,450 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts
+2025-03-10 06:43:41,469 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\onedrive-file-picker.ts (attempt 1/4)...
+2025-03-10 06:44:24,234 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\onedrive-file-picker.ts
+2025-03-10 06:44:24,235 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\onedrive-file-picker.ts - Cost: $0.025390, Total: $0.136946
+2025-03-10 06:44:26,249 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\_template_old.ts (attempt 1/4)...
+2025-03-10 06:44:38,726 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\_template_old.ts
+2025-03-10 06:44:38,727 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\_template_old.ts - Cost: $0.009524, Total: $0.146470
+2025-03-10 06:44:40,748 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\kokoro.worker.ts (attempt 1/4)...
+2025-03-10 06:44:50,973 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\kokoro.worker.ts
+2025-03-10 06:44:50,974 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\kokoro.worker.ts - Cost: $0.006632, Total: $0.153102
+2025-03-10 06:44:53,015 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\KokoroWorker.ts (attempt 1/4)...
+2025-03-10 06:45:12,570 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\KokoroWorker.ts
+2025-03-10 06:45:12,571 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\KokoroWorker.ts - Cost: $0.011918, Total: $0.165020
+2025-03-10 06:45:12,955 - refactoring - INFO - Successfully committed 4 files: [ai-improvements 776b41447] Refactor 4 files using AI
+ 4 files changed, 503 insertions(+), 395 deletions(-)
+
+2025-03-10 06:45:13,969 - refactoring - INFO - Completed processing 4 files
+2025-03-10 06:45:45,053 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:45:45,056 - refactoring - INFO - Found 265 unprocessed files out of 279 total files
+2025-03-10 06:45:45,056 - refactoring - INFO - Processing 5 files
+2025-03-10 06:45:46,070 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1/4)...
+2025-03-10 06:45:46,361 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131477 tokens: 8362 tokens from the ...
+2025-03-10 06:45:46,361 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts
+2025-03-10 06:45:47,374 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts (attempt 1/4)...
+2025-03-10 06:45:47,448 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131129 tokens: 1714 tokens from the ...
+2025-03-10 06:45:47,450 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts
+2025-03-10 06:45:48,460 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts (attempt 1/4)...
+2025-03-10 06:45:48,534 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131154 tokens: 1378 tokens from the ...
+2025-03-10 06:45:48,535 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts
+2025-03-10 06:45:49,542 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts (attempt 1/4)...
+2025-03-10 06:45:49,615 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131557 tokens: 4175 tokens from the ...
+2025-03-10 06:45:49,616 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts
+2025-03-10 06:45:50,634 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts (attempt 1/4)...
+2025-03-10 06:45:50,706 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131347 tokens: 2758 tokens from the ...
+2025-03-10 06:45:50,707 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts
+2025-03-10 06:45:50,710 - refactoring - INFO - Completed processing 0 files
+2025-03-10 06:46:00,130 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:46:00,132 - refactoring - INFO - Found 272 unprocessed files out of 279 total files
+2025-03-10 06:46:00,132 - refactoring - INFO - Processing 10 files
+2025-03-10 06:46:01,150 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts (attempt 1/4)...
+2025-03-10 06:46:01,331 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131148 tokens: 1372 tokens from the ...
+2025-03-10 06:46:01,331 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts
+2025-03-10 06:46:02,344 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\types\index.ts (attempt 1/4)...
+2025-03-10 06:46:03,885 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\types\index.ts
+2025-03-10 06:46:03,885 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\types\index.ts - Cost: $0.001922, Total: $0.067376
+2025-03-10 06:46:05,902 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\google-drive-picker.ts (attempt 1/4)...
+2025-03-10 06:46:36,942 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\google-drive-picker.ts
+2025-03-10 06:46:36,942 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\google-drive-picker.ts - Cost: $0.021116, Total: $0.088492
+2025-03-10 06:46:38,962 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1/4)...
+2025-03-10 06:46:39,202 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131477 tokens: 8362 tokens from the ...
+2025-03-10 06:46:39,204 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts
+2025-03-10 06:46:40,223 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\onedrive-file-picker.ts (attempt 1/4)...
+2025-03-10 06:47:17,865 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\onedrive-file-picker.ts
+2025-03-10 06:47:17,866 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\onedrive-file-picker.ts - Cost: $0.025914, Total: $0.114406
+2025-03-10 06:47:19,884 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\_template_old.ts (attempt 1/4)...
+2025-03-10 06:47:35,363 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\_template_old.ts
+2025-03-10 06:47:35,364 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\_template_old.ts - Cost: $0.009954, Total: $0.124360
+2025-03-10 06:47:37,386 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\kokoro.worker.ts (attempt 1/4)...
+2025-03-10 06:47:46,483 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\kokoro.worker.ts
+2025-03-10 06:47:46,484 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\kokoro.worker.ts - Cost: $0.006630, Total: $0.130990
+2025-03-10 06:47:48,500 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\KokoroWorker.ts (attempt 1/4)...
+2025-03-10 06:48:13,491 - refactoring - INFO - Refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\KokoroWorker.ts
+2025-03-10 06:48:13,492 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\KokoroWorker.ts - Cost: $0.012700, Total: $0.143690
+2025-03-10 06:48:15,507 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts (attempt 1/4)...
+2025-03-10 06:48:15,586 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131129 tokens: 1714 tokens from the ...
+2025-03-10 06:48:15,587 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts
+2025-03-10 06:48:16,603 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts (attempt 1/4)...
+2025-03-10 06:48:16,695 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131154 tokens: 1378 tokens from the ...
+2025-03-10 06:48:16,696 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts
+2025-03-10 06:48:16,699 - refactoring - INFO - Final commit of 3 files
+2025-03-10 06:48:17,049 - refactoring - INFO - Successfully committed 3 files: [ai-improvements 26b325003] Refactor 3 files using AI
+ 3 files changed, 20 insertions(+), 19 deletions(-)
+
+2025-03-10 06:48:17,050 - refactoring - INFO - Completed processing 6 files
+2025-03-10 06:55:11,601 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:55:11,603 - refactoring - INFO - Found 265 unprocessed files out of 279 total files
+2025-03-10 06:55:11,604 - refactoring - INFO - Processing 1 files
+2025-03-10 06:55:12,619 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1/4)...
+2025-03-10 06:55:12,900 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131477 tokens: 8362 tokens from the ...
+2025-03-10 06:55:12,900 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts
+2025-03-10 06:55:12,907 - refactoring - INFO - Completed processing 0 files
+2025-03-10 06:55:43,950 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:55:43,953 - refactoring - INFO - Found 265 unprocessed files out of 279 total files
+2025-03-10 06:55:43,953 - refactoring - INFO - Processing 1 files
+2025-03-10 06:55:44,961 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1/4)...
+2025-03-10 06:55:45,173 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131477 tokens: 8362 tokens from the ...
+2025-03-10 06:55:45,174 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts
+2025-03-10 06:55:45,177 - refactoring - INFO - Completed processing 0 files
+2025-03-10 06:55:54,984 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:55:54,987 - refactoring - INFO - Found 265 unprocessed files out of 279 total files
+2025-03-10 06:55:54,987 - refactoring - INFO - Processing 16 files
+2025-03-10 06:55:55,992 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1/4)...
+2025-03-10 06:55:56,282 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131477 tokens: 8362 tokens from the ...
+2025-03-10 06:55:56,282 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts
+2025-03-10 06:55:57,302 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts (attempt 1/4)...
+2025-03-10 06:55:57,378 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131129 tokens: 1714 tokens from the ...
+2025-03-10 06:55:57,378 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts
+2025-03-10 06:55:58,391 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts (attempt 1/4)...
+2025-03-10 06:55:58,480 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131154 tokens: 1378 tokens from the ...
+2025-03-10 06:55:58,481 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts
+2025-03-10 06:55:59,500 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts (attempt 1/4)...
+2025-03-10 06:55:59,663 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131557 tokens: 4175 tokens from the ...
+2025-03-10 06:55:59,665 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts
+2025-03-10 06:56:00,679 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts (attempt 1/4)...
+2025-03-10 06:56:00,768 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131347 tokens: 2758 tokens from the ...
+2025-03-10 06:56:00,769 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts
+2025-03-10 06:56:01,781 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts (attempt 1/4)...
+2025-03-10 06:56:01,874 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131971 tokens: 6268 tokens from the ...
+2025-03-10 06:56:01,875 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts
+2025-03-10 06:56:02,879 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\configs\index.ts (attempt 1/4)...
+2025-03-10 06:56:03,039 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\configs\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131232 tokens: 2073 tokens from the ...
+2025-03-10 06:56:03,040 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\configs\index.ts
+2025-03-10 06:56:04,055 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\evaluations\index.ts (attempt 1/4)...
+2025-03-10 06:56:04,132 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\evaluations\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131202 tokens: 1738 tokens from the ...
+2025-03-10 06:56:04,132 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\evaluations\index.ts
+2025-03-10 06:56:05,136 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\files\index.ts (attempt 1/4)...
+2025-03-10 06:56:05,232 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\files\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131219 tokens: 1683 tokens from the ...
+2025-03-10 06:56:05,233 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\files\index.ts
+2025-03-10 06:56:06,250 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\folders\index.ts (attempt 1/4)...
+2025-03-10 06:56:06,345 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\folders\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131239 tokens: 1845 tokens from the ...
+2025-03-10 06:56:06,346 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\folders\index.ts
+2025-03-10 06:56:07,351 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\functions\index.ts (attempt 1/4)...
+2025-03-10 06:56:07,427 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\functions\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131386 tokens: 2848 tokens from the ...
+2025-03-10 06:56:07,427 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\functions\index.ts
+2025-03-10 06:56:08,438 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\groups\index.ts (attempt 1/4)...
+2025-03-10 06:56:08,522 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\groups\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131158 tokens: 1253 tokens from the ...
+2025-03-10 06:56:08,523 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\groups\index.ts
+2025-03-10 06:56:09,534 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\images\index.ts (attempt 1/4)...
+2025-03-10 06:56:09,678 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\images\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131191 tokens: 1700 tokens from the ...
+2025-03-10 06:56:09,678 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\images\index.ts
+2025-03-10 06:56:10,697 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\knowledge\index.ts (attempt 1/4)...
+2025-03-10 06:56:10,802 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\knowledge\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131268 tokens: 2264 tokens from the ...
+2025-03-10 06:56:10,803 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\knowledge\index.ts
+2025-03-10 06:56:11,812 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\memories\index.ts (attempt 1/4)...
+2025-03-10 06:56:11,912 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\memories\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131163 tokens: 1387 tokens from the ...
+2025-03-10 06:56:11,912 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\memories\index.ts
+2025-03-10 06:56:12,928 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\models\index.ts (attempt 1/4)...
+2025-03-10 06:56:13,017 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\models\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131211 tokens: 1818 tokens from the ...
+2025-03-10 06:56:13,018 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\models\index.ts
+2025-03-10 06:56:13,021 - refactoring - INFO - Completed processing 0 files
+2025-03-10 06:56:27,108 - refactoring - INFO - Found 279 files to process after applying skip rules
+2025-03-10 06:56:27,111 - refactoring - INFO - Found 266 unprocessed files out of 279 total files
+2025-03-10 06:56:27,111 - refactoring - INFO - Processing 16 files
+2025-03-10 06:56:28,116 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts (attempt 1/4)...
+2025-03-10 06:56:28,322 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131148 tokens: 1372 tokens from the ...
+2025-03-10 06:56:28,323 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts
+2025-03-10 06:56:29,338 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1/4)...
+2025-03-10 06:56:29,466 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131477 tokens: 8362 tokens from the ...
+2025-03-10 06:56:29,466 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts
+2025-03-10 06:56:30,486 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts (attempt 1/4)...
+2025-03-10 06:56:30,633 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131129 tokens: 1714 tokens from the ...
+2025-03-10 06:56:30,634 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts
+2025-03-10 06:56:31,647 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts (attempt 1/4)...
+2025-03-10 06:56:31,719 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131154 tokens: 1378 tokens from the ...
+2025-03-10 06:56:31,719 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts
+2025-03-10 06:56:32,731 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts (attempt 1/4)...
+2025-03-10 06:56:32,806 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131557 tokens: 4175 tokens from the ...
+2025-03-10 06:56:32,807 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts
+2025-03-10 06:56:33,814 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts (attempt 1/4)...
+2025-03-10 06:56:33,969 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131347 tokens: 2758 tokens from the ...
+2025-03-10 06:56:33,970 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts
+2025-03-10 06:56:34,977 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts (attempt 1/4)...
+2025-03-10 06:56:35,059 - refactoring - ERROR - API error 400 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts: {"code":"Client specified an invalid argument","error":"Requested token count exceeds the model's maximum context length of 131072 tokens. You requested a total of 131971 tokens: 6268 tokens from the ...
+2025-03-10 06:56:35,059 - refactoring - ERROR - Refactoring failed for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts
+2025-03-10 07:00:07,103 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts (attempt 1)
+2025-03-10 07:00:26,629 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\pyodide\pyodideKernel.worker.ts - Cost: $0.012434
+2025-03-10 07:00:28,637 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1)
+2025-03-10 07:01:28,243 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:01:34,264 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 2)
+2025-03-10 07:02:34,245 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:02:45,254 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 3)
+2025-03-10 07:03:45,245 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:04:06,259 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 4)
+2025-03-10 07:05:06,246 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:05:07,260 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts (attempt 1)
+2025-03-10 07:05:22,938 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\workers\pyodide.worker.ts - Cost: $0.012438
+2025-03-10 07:05:24,961 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts (attempt 1)
+2025-03-10 07:05:47,957 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\audio\index.ts - Cost: $0.015846
+2025-03-10 07:05:49,986 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts (attempt 1)
+2025-03-10 07:06:49,266 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:06:55,292 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts (attempt 2)
+2025-03-10 07:07:55,267 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:08:06,290 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts (attempt 3)
+2025-03-10 07:09:06,247 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:09:27,254 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts (attempt 4)
+2025-03-10 07:10:09,076 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\auths\index.ts - Cost: $0.030610
+2025-03-10 07:10:09,274 - refactoring - INFO - Committed 4 files
+2025-03-10 07:10:11,285 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts (attempt 1)
+2025-03-10 07:10:30,063 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\channels\index.ts - Cost: $0.016226
+2025-03-10 07:10:32,073 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts (attempt 1)
+2025-03-10 07:11:31,250 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:11:37,269 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts (attempt 2)
+2025-03-10 07:12:37,250 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:12:48,273 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts (attempt 3)
+2025-03-10 07:13:40,468 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\chats\index.ts - Cost: $0.042506
+2025-03-10 07:13:42,496 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\configs\index.ts (attempt 1)
+2025-03-10 07:14:20,029 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\configs\index.ts - Cost: $0.024626
+2025-03-10 07:14:22,040 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\evaluations\index.ts (attempt 1)
+2025-03-10 07:14:54,218 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\evaluations\index.ts - Cost: $0.019736
+2025-03-10 07:14:54,450 - refactoring - INFO - Committed 4 files
+2025-03-10 07:14:56,467 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\files\index.ts (attempt 1)
+2025-03-10 07:15:26,595 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\files\index.ts - Cost: $0.019356
+2025-03-10 07:15:28,613 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\folders\index.ts (attempt 1)
+2025-03-10 07:15:59,059 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\folders\index.ts - Cost: $0.021130
+2025-03-10 07:16:01,085 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\functions\index.ts (attempt 1)
+2025-03-10 07:16:32,460 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\functions\index.ts - Cost: $0.024126
+2025-03-10 07:16:34,476 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\groups\index.ts (attempt 1)
+2025-03-10 07:16:56,239 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\groups\index.ts - Cost: $0.013116
+2025-03-10 07:16:56,453 - refactoring - INFO - Committed 4 files
+2025-03-10 07:16:58,473 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\images\index.ts (attempt 1)
+2025-03-10 07:17:21,411 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\images\index.ts - Cost: $0.017360
+2025-03-10 07:17:23,425 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\knowledge\index.ts (attempt 1)
+2025-03-10 07:18:09,672 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\knowledge\index.ts - Cost: $0.029438
+2025-03-10 07:18:11,701 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\memories\index.ts (attempt 1)
+2025-03-10 07:18:36,632 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\memories\index.ts - Cost: $0.015184
+2025-03-10 07:18:37,839 - refactoring - INFO - Committed 3 files
+2025-03-10 07:20:55,645 - refactoring - INFO - Total files found in directories: 279
+2025-03-10 07:20:55,646 - refactoring - INFO - Unprocessed files before processing: 251
+2025-03-10 07:20:56,661 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1)
+2025-03-10 07:21:56,210 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:22:02,233 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 2)
+2025-03-10 07:23:02,276 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:23:13,296 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 3)
+2025-03-10 07:24:13,255 - refactoring - ERROR - API error 520 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-
+2025-03-10 07:24:34,269 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 4)
+2025-03-10 07:25:22,068 - refactoring - ERROR - API error 502 for C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+
+2025-03-10 07:25:22,071 - refactoring - INFO - Processed 0 files this run
+2025-03-10 07:25:22,071 - refactoring - INFO - Total files remaining to process: 251
