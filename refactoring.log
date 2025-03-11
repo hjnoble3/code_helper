@@ -1624,3 +1624,89 @@
 2025-03-10 18:15:32,170 - refactoring - INFO - Total files found in directories: 302
 2025-03-10 18:15:32,171 - refactoring - INFO - Unprocessed files before processing: 212
 2025-03-10 18:15:33,188 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1)
+2025-03-11 09:01:40,466 - refactoring - INFO - Total files found in directories: 35
+2025-03-11 09:01:40,467 - refactoring - INFO - Unprocessed files before processing: 35
+2025-03-11 09:01:41,478 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+layout.js (attempt 1)
+2025-03-11 09:01:41,479 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\+layout.svelte (attempt 1)
+2025-03-11 09:01:41,480 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\+page.svelte (attempt 1)
+2025-03-11 09:01:41,481 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+error.svelte (attempt 1)
+2025-03-11 09:01:41,481 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+layout.svelte (attempt 1)
+2025-03-11 09:01:43,556 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\auth\+page.svelte (attempt 1)
+2025-03-11 09:01:43,869 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\error\+page.svelte (attempt 1)
+2025-03-11 09:01:45,220 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\watch\+page.svelte (attempt 1)
+2025-03-11 09:01:50,846 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\admin\+layout.svelte (attempt 1)
+2025-03-11 09:01:51,978 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\admin\+page.svelte (attempt 1)
+2025-03-11 09:01:55,130 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\home\+layout.svelte (attempt 1)
+2025-03-11 09:02:03,934 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\home\+page.svelte (attempt 1)
+2025-03-11 09:02:07,769 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\workspace\+layout.svelte (attempt 1)
+2025-03-11 09:02:39,682 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+layout.js - Cost: $0.001162
+2025-03-11 09:02:39,685 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+error.svelte - Cost: $0.002156
+2025-03-11 09:02:39,689 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+layout.svelte - Cost: $0.040692
+2025-03-11 09:02:39,693 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\+layout.svelte - Cost: $0.033670
+2025-03-11 09:02:39,697 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\+page.svelte - Cost: $0.001336
+2025-03-11 09:02:39,711 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\auth\+page.svelte - Cost: $0.028222
+2025-03-11 09:02:39,714 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\error\+page.svelte - Cost: $0.005946
+2025-03-11 09:02:39,718 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\watch\+page.svelte - Cost: $0.003222
+2025-03-11 09:02:39,723 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\admin\+layout.svelte - Cost: $0.011624
+2025-03-11 09:02:39,728 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\admin\+page.svelte - Cost: $0.001944
+2025-03-11 09:02:39,732 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\home\+layout.svelte - Cost: $0.005830
+2025-03-11 09:02:39,737 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\home\+page.svelte - Cost: $0.003768
+2025-03-11 09:02:39,741 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\workspace\+layout.svelte - Cost: $0.012938
+2025-03-11 09:02:39,978 - refactoring - INFO - Committed 13 files
+2025-03-11 09:02:39,979 - refactoring - INFO - Processed 13 files this run
+2025-03-11 09:02:39,979 - refactoring - INFO - Total files remaining to process: 22
+2025-03-11 09:02:39,994 - refactoring - INFO - Total files found in directories: 35
+2025-03-11 09:02:39,994 - refactoring - INFO - Unprocessed files before processing: 35
+2025-03-11 09:02:41,005 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+layout.js (attempt 1)
+2025-03-11 09:02:42,002 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+layout.js - Cost: $0.001170
+2025-03-11 09:02:44,024 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+error.svelte (attempt 1)
+2025-03-11 09:02:46,006 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+error.svelte - Cost: $0.002166
+2025-03-11 09:02:48,038 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+layout.svelte (attempt 1)
+2025-03-11 09:03:54,783 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\+layout.svelte - Cost: $0.037910
+2025-03-11 09:03:56,808 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\+layout.svelte (attempt 1)
+2025-03-11 09:04:38,798 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\+layout.svelte - Cost: $0.030964
+2025-03-11 09:04:40,815 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\+page.svelte (attempt 1)
+2025-03-11 09:04:41,888 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\+page.svelte - Cost: $0.001338
+2025-03-11 09:04:43,899 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\auth\+page.svelte (attempt 1)
+2025-03-11 09:05:24,529 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\auth\+page.svelte - Cost: $0.027554
+2025-03-11 09:05:26,554 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\error\+page.svelte (attempt 1)
+2025-03-11 09:05:33,520 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\error\+page.svelte - Cost: $0.005958
+2025-03-11 09:05:35,552 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\watch\+page.svelte (attempt 1)
+2025-03-11 09:05:38,184 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\watch\+page.svelte - Cost: $0.002576
+2025-03-11 09:05:40,212 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\admin\+layout.svelte (attempt 1)
+2025-03-11 09:06:00,392 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\admin\+layout.svelte - Cost: $0.012316
+2025-03-11 09:06:02,415 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\admin\+page.svelte (attempt 1)
+2025-03-11 09:06:04,427 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\admin\+page.svelte - Cost: $0.002082
+2025-03-11 09:06:06,453 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\home\+layout.svelte (attempt 1)
+2025-03-11 09:06:15,327 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\home\+layout.svelte - Cost: $0.006118
+2025-03-11 09:06:17,361 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\home\+page.svelte (attempt 1)
+2025-03-11 09:06:22,845 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\home\+page.svelte - Cost: $0.004444
+2025-03-11 09:06:24,858 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\workspace\+layout.svelte (attempt 1)
+2025-03-11 09:06:45,021 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\routes\(app)\workspace\+layout.svelte - Cost: $0.012942
+2025-03-11 09:06:46,232 - refactoring - INFO - Committed 8 files
+2025-03-11 09:06:46,233 - refactoring - INFO - Processed 13 files this run
+2025-03-11 09:06:46,234 - refactoring - INFO - Total files remaining to process: 22
+2025-03-11 09:18:27,925 - refactoring - INFO - Found 229 files to process
+2025-03-11 09:18:27,928 - refactoring - INFO - Files to process: 3 of 229 total
+2025-03-11 09:18:27,929 - refactoring - INFO - Processing file 1/3: C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts
+2025-03-11 09:18:27,929 - refactoring - INFO - Processing file 2/3: C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts
+2025-03-11 09:18:27,930 - refactoring - INFO - Processing file 3/3: C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts
+2025-03-11 09:18:27,932 - refactoring - INFO - Refactoring chunk of C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts chunk 1/1 (attempt 1)
+2025-03-11 09:18:27,932 - refactoring - INFO - Splitting C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts (1065 lines) into chunks
+2025-03-11 09:18:28,936 - refactoring - INFO - Refactoring chunk of C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts chunk 1/3 (attempt 1)
+2025-03-11 09:18:29,958 - refactoring - INFO - Refactoring chunk of C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts chunk 1/1 (attempt 1)
+2025-03-11 09:18:30,504 - refactoring - INFO - Saved refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\index.ts - Cost: $0.000962
+2025-03-11 09:18:30,505 - refactoring - INFO - Progress: 1/3 (33.3%) - Success: 1
+2025-03-11 09:18:39,631 - refactoring - INFO - Saved refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\constants.ts - Cost: $0.008286
+2025-03-11 09:18:39,631 - refactoring - INFO - Progress: 2/3 (66.7%) - Success: 2
+2025-03-11 09:18:43,566 - refactoring - INFO - Refactoring chunk of C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts chunk 2/3 (attempt 1)
+2025-03-11 09:19:36,104 - refactoring - INFO - Refactoring chunk of C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts chunk 3/3 (attempt 1)
+2025-03-11 09:19:43,496 - refactoring - INFO - Saved refactored C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\apis\index.ts - Cost: $0.054532
+2025-03-11 09:19:43,500 - refactoring - INFO - Progress: 3/3 (100.0%) - Success: 3
+2025-03-11 09:19:43,697 - refactoring - INFO - Committed 3 files: [detached HEAD 031685df4] Refactor 3 files using AI
+ 1 file changed, 74 insertions(+), 566 deletions(-)
+
+2025-03-11 09:19:43,701 - refactoring - INFO - Run complete! Processed 3 files in 75.8 seconds
+2025-03-11 09:19:43,701 - refactoring - INFO - Success rate: 3/3 (100.0% if processed_count else 0)%
+2025-03-11 09:19:43,702 - refactoring - INFO - Total cost: $0.211318
+2025-03-11 09:19:43,702 - refactoring - INFO - Remaining files: 226
