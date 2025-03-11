@@ -1459,3 +1459,168 @@
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
 <!--[if IE 8]>    <html class="no-
 2025-03-10 14:00:28,343 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\chat\Chat.svelte (attempt 2)
+2025-03-10 16:58:14,742 - refactoring - INFO - Total files found in directories: 77
+2025-03-10 16:58:14,743 - refactoring - INFO - Unprocessed files before processing: 77
+2025-03-10 16:58:15,756 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\AdjustmentsHorizontal.svelte (attempt 1)
+2025-03-10 16:58:28,519 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\AdjustmentsHorizontal.svelte - Cost: $0.008760
+2025-03-10 16:58:30,550 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArchiveBox.svelte (attempt 1)
+2025-03-10 16:58:39,809 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArchiveBox.svelte - Cost: $0.005570
+2025-03-10 16:58:41,833 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowDownTray.svelte (attempt 1)
+2025-03-10 16:58:45,729 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowDownTray.svelte - Cost: $0.003604
+2025-03-10 16:58:47,752 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowLeft.svelte (attempt 1)
+2025-03-10 16:58:51,486 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowLeft.svelte - Cost: $0.002704
+2025-03-10 16:58:53,508 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowPath.svelte (attempt 1)
+2025-03-10 16:58:59,307 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowPath.svelte - Cost: $0.004680
+2025-03-10 16:59:01,328 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowRight.svelte (attempt 1)
+2025-03-10 16:59:04,215 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowRight.svelte - Cost: $0.002654
+2025-03-10 16:59:06,231 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowRightCircle.svelte (attempt 1)
+2025-03-10 16:59:11,011 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowRightCircle.svelte - Cost: $0.003492
+2025-03-10 16:59:13,023 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowsPointingOut.svelte (attempt 1)
+2025-03-10 16:59:20,029 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowsPointingOut.svelte - Cost: $0.004456
+2025-03-10 16:59:22,055 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowUpCircle.svelte (attempt 1)
+2025-03-10 16:59:27,169 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ArrowUpCircle.svelte - Cost: $0.003530
+2025-03-10 16:59:29,182 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\BarsArrowUp.svelte (attempt 1)
+2025-03-10 16:59:33,485 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\BarsArrowUp.svelte - Cost: $0.003524
+2025-03-10 16:59:35,499 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Bolt.svelte (attempt 1)
+2025-03-10 16:59:39,924 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Bolt.svelte - Cost: $0.003096
+2025-03-10 16:59:41,948 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Bookmark.svelte (attempt 1)
+2025-03-10 16:59:46,959 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Bookmark.svelte - Cost: $0.004344
+2025-03-10 16:59:48,968 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\BookmarkSlash.svelte (attempt 1)
+2025-03-10 16:59:56,502 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\BookmarkSlash.svelte - Cost: $0.004670
+2025-03-10 16:59:58,527 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\CameraSolid.svelte (attempt 1)
+2025-03-10 17:00:12,145 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\CameraSolid.svelte - Cost: $0.007752
+2025-03-10 17:00:14,181 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChartBar.svelte (attempt 1)
+2025-03-10 17:00:26,275 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChartBar.svelte - Cost: $0.007392
+2025-03-10 17:00:28,281 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChatBubble.svelte (attempt 1)
+2025-03-10 17:00:38,639 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChatBubble.svelte - Cost: $0.007398
+2025-03-10 17:00:40,653 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChatBubbleOval.svelte (attempt 1)
+2025-03-10 17:00:47,281 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChatBubbleOval.svelte - Cost: $0.005196
+2025-03-10 17:00:49,298 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChatBubbleOvalEllipsis.svelte (attempt 1)
+2025-03-10 17:01:00,766 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChatBubbleOvalEllipsis.svelte - Cost: $0.007538
+2025-03-10 17:01:02,781 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChatBubbles.svelte (attempt 1)
+2025-03-10 17:01:14,844 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChatBubbles.svelte - Cost: $0.008904
+2025-03-10 17:01:16,866 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Check.svelte (attempt 1)
+2025-03-10 17:01:20,673 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Check.svelte - Cost: $0.002772
+2025-03-10 17:01:20,914 - refactoring - INFO - Committed 20 files
+2025-03-10 17:01:22,934 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChevronDown.svelte (attempt 1)
+2025-03-10 17:01:26,185 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChevronDown.svelte - Cost: $0.002732
+2025-03-10 17:01:28,200 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChevronLeft.svelte (attempt 1)
+2025-03-10 17:01:30,909 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChevronLeft.svelte - Cost: $0.002654
+2025-03-10 17:01:32,930 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChevronRight.svelte (attempt 1)
+2025-03-10 17:01:35,899 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChevronRight.svelte - Cost: $0.002570
+2025-03-10 17:01:37,914 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChevronUp.svelte (attempt 1)
+2025-03-10 17:01:41,479 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChevronUp.svelte - Cost: $0.002582
+2025-03-10 17:01:43,507 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChevronUpDown.svelte (attempt 1)
+2025-03-10 17:01:47,736 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\ChevronUpDown.svelte - Cost: $0.003062
+2025-03-10 17:01:49,747 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Clipboard.svelte (attempt 1)
+2025-03-10 17:02:00,467 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Clipboard.svelte - Cost: $0.006946
+2025-03-10 17:02:02,490 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\CloudArrowUp.svelte (attempt 1)
+2025-03-10 17:02:09,884 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\CloudArrowUp.svelte - Cost: $0.004478
+2025-03-10 17:02:11,925 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Cog6.svelte (attempt 1)
+2025-03-10 17:02:34,272 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Cog6.svelte - Cost: $0.014358
+2025-03-10 17:02:36,294 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\CommandLine.svelte (attempt 1)
+2025-03-10 17:02:41,581 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\CommandLine.svelte - Cost: $0.004272
+2025-03-10 17:02:43,598 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\CommandLineSolid.svelte (attempt 1)
+2025-03-10 17:02:50,307 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\CommandLineSolid.svelte - Cost: $0.005232
+2025-03-10 17:02:52,329 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Cube.svelte (attempt 1)
+2025-03-10 17:02:56,622 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Cube.svelte - Cost: $0.003560
+2025-03-10 17:02:58,643 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Document.svelte (attempt 1)
+2025-03-10 17:03:07,381 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Document.svelte - Cost: $0.005746
+2025-03-10 17:03:09,397 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\DocumentArrowUpSolid.svelte (attempt 1)
+2025-03-10 17:03:20,794 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\DocumentArrowUpSolid.svelte - Cost: $0.008046
+2025-03-10 17:03:22,816 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\DocumentChartBar.svelte (attempt 1)
+2025-03-10 17:03:34,988 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\DocumentChartBar.svelte - Cost: $0.008818
+2025-03-10 17:03:37,019 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\DocumentDuplicate.svelte (attempt 1)
+2025-03-10 17:03:49,175 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\DocumentDuplicate.svelte - Cost: $0.007980
+2025-03-10 17:03:51,201 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Download.svelte (attempt 1)
+2025-03-10 17:03:55,888 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Download.svelte - Cost: $0.003854
+2025-03-10 17:03:57,917 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\EllipsisHorizontal.svelte (attempt 1)
+2025-03-10 17:04:04,995 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\EllipsisHorizontal.svelte - Cost: $0.004430
+2025-03-10 17:04:07,009 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\EllipsisVertical.svelte (attempt 1)
+2025-03-10 17:04:13,886 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\EllipsisVertical.svelte - Cost: $0.004330
+2025-03-10 17:04:15,893 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\EyeSlash.svelte (attempt 1)
+2025-03-10 17:04:24,593 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\EyeSlash.svelte - Cost: $0.006814
+2025-03-10 17:04:26,619 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\FaceSmile.svelte (attempt 1)
+2025-03-10 17:04:34,993 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\FaceSmile.svelte - Cost: $0.005904
+2025-03-10 17:04:35,230 - refactoring - INFO - Committed 20 files
+2025-03-10 17:04:37,250 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\FolderOpen.svelte (attempt 1)
+2025-03-10 17:04:46,625 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\FolderOpen.svelte - Cost: $0.006302
+2025-03-10 17:04:48,642 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\GarbageBin.svelte (attempt 1)
+2025-03-10 17:04:59,495 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\GarbageBin.svelte - Cost: $0.007428
+2025-03-10 17:05:01,516 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\GlobeAlt.svelte (attempt 1)
+2025-03-10 17:05:13,608 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\GlobeAlt.svelte - Cost: $0.008336
+2025-03-10 17:05:15,627 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\GlobeAltSolid.svelte (attempt 1)
+2025-03-10 17:05:38,698 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\GlobeAltSolid.svelte - Cost: $0.014514
+2025-03-10 17:05:40,715 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Headphone.svelte (attempt 1)
+2025-03-10 17:05:47,361 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Headphone.svelte - Cost: $0.005148
+2025-03-10 17:05:49,379 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Heart.svelte (attempt 1)
+2025-03-10 17:05:55,000 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Heart.svelte - Cost: $0.004510
+2025-03-10 17:05:57,018 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Home.svelte (attempt 1)
+2025-03-10 17:06:03,015 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Home.svelte - Cost: $0.004144
+2025-03-10 17:06:05,035 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Info.svelte (attempt 1)
+2025-03-10 17:06:11,216 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Info.svelte - Cost: $0.004154
+2025-03-10 17:06:13,243 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Keyboard.svelte (attempt 1)
+2025-03-10 17:06:22,800 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Keyboard.svelte - Cost: $0.006432
+2025-03-10 17:06:24,824 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Lifebuoy.svelte (attempt 1)
+2025-03-10 17:06:49,101 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Lifebuoy.svelte - Cost: $0.014518
+2025-03-10 17:06:51,116 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\LightBlub.svelte (attempt 1)
+2025-03-10 17:06:58,424 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\LightBlub.svelte - Cost: $0.005548
+2025-03-10 17:07:00,438 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Link.svelte (attempt 1)
+2025-03-10 17:07:09,622 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Link.svelte - Cost: $0.006632
+2025-03-10 17:07:11,641 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\LockClosed.svelte (attempt 1)
+2025-03-10 17:07:19,386 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\LockClosed.svelte - Cost: $0.004646
+2025-03-10 17:07:21,406 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\MagnifyingGlass.svelte (attempt 1)
+2025-03-10 17:07:26,703 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\MagnifyingGlass.svelte - Cost: $0.003598
+2025-03-10 17:07:28,726 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Map.svelte (attempt 1)
+2025-03-10 17:07:38,064 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Map.svelte - Cost: $0.006474
+2025-03-10 17:07:40,082 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\MenuLines.svelte (attempt 1)
+2025-03-10 17:07:44,321 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\MenuLines.svelte - Cost: $0.003128
+2025-03-10 17:07:46,346 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Merge.svelte (attempt 1)
+2025-03-10 17:07:52,080 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Merge.svelte - Cost: $0.004276
+2025-03-10 17:07:54,093 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Mic.svelte (attempt 1)
+2025-03-10 17:07:59,914 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Mic.svelte - Cost: $0.005030
+2025-03-10 17:08:01,940 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Minus.svelte (attempt 1)
+2025-03-10 17:08:04,479 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Minus.svelte - Cost: $0.002366
+2025-03-10 17:08:06,488 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Pencil.svelte (attempt 1)
+2025-03-10 17:08:12,245 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Pencil.svelte - Cost: $0.004518
+2025-03-10 17:08:12,475 - refactoring - INFO - Committed 20 files
+2025-03-10 17:08:14,493 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\PencilSolid.svelte (attempt 1)
+2025-03-10 17:08:22,082 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\PencilSolid.svelte - Cost: $0.004916
+2025-03-10 17:08:24,100 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\PencilSquare.svelte (attempt 1)
+2025-03-10 17:08:32,486 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\PencilSquare.svelte - Cost: $0.005678
+2025-03-10 17:08:34,508 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Photo.svelte (attempt 1)
+2025-03-10 17:08:39,394 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Photo.svelte - Cost: $0.004316
+2025-03-10 17:08:41,407 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\PhotoSolid.svelte (attempt 1)
+2025-03-10 17:08:51,506 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\PhotoSolid.svelte - Cost: $0.006342
+2025-03-10 17:08:53,519 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Plus.svelte (attempt 1)
+2025-03-10 17:08:57,853 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Plus.svelte - Cost: $0.002910
+2025-03-10 17:08:59,876 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\QuestionMarkCircle.svelte (attempt 1)
+2025-03-10 17:09:07,974 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\QuestionMarkCircle.svelte - Cost: $0.004966
+2025-03-10 17:09:09,988 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Reset.svelte (attempt 1)
+2025-03-10 17:09:15,963 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Reset.svelte - Cost: $0.004606
+2025-03-10 17:09:17,982 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Search.svelte (attempt 1)
+2025-03-10 17:09:23,092 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Search.svelte - Cost: $0.003588
+2025-03-10 17:09:25,106 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Share.svelte (attempt 1)
+2025-03-10 17:09:29,660 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Share.svelte - Cost: $0.003882
+2025-03-10 17:09:31,685 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Sparkles.svelte (attempt 1)
+2025-03-10 17:09:46,763 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Sparkles.svelte - Cost: $0.009970
+2025-03-10 17:09:48,796 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\User.svelte (attempt 1)
+2025-03-10 17:09:55,723 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\User.svelte - Cost: $0.004228
+2025-03-10 17:09:57,728 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\UserCircleSolid.svelte (attempt 1)
+2025-03-10 17:10:03,133 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\UserCircleSolid.svelte - Cost: $0.004196
+2025-03-10 17:10:05,150 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\UserPlusSolid.svelte (attempt 1)
+2025-03-10 17:10:12,474 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\UserPlusSolid.svelte - Cost: $0.005336
+2025-03-10 17:10:14,493 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\UsersSolid.svelte (attempt 1)
+2025-03-10 17:10:23,286 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\UsersSolid.svelte - Cost: $0.007048
+2025-03-10 17:10:25,308 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Wrench.svelte (attempt 1)
+2025-03-10 17:10:33,411 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Wrench.svelte - Cost: $0.006238
+2025-03-10 17:10:35,429 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\WrenchSolid.svelte (attempt 1)
+2025-03-10 17:10:47,734 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\WrenchSolid.svelte - Cost: $0.007166
+2025-03-10 17:10:49,749 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\XMark.svelte (attempt 1)
+2025-03-10 17:10:53,736 - refactoring - INFO - Processed C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\XMark.svelte - Cost: $0.002814
+2025-03-10 17:10:54,989 - refactoring - INFO - Committed 17 files
+2025-03-10 17:10:54,990 - refactoring - INFO - Processed 77 files this run
+2025-03-10 17:10:54,990 - refactoring - INFO - Total files remaining to process: 0
+2025-03-10 18:15:32,170 - refactoring - INFO - Total files found in directories: 302
+2025-03-10 18:15:32,171 - refactoring - INFO - Unprocessed files before processing: 212
+2025-03-10 18:15:33,188 - refactoring - INFO - Processing C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\utils\index.ts (attempt 1)
