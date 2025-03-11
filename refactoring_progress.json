@@ -15,7 +15,10 @@
     "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\workers\\KokoroWorker.ts",
     "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\pyodide\\pyodideKernel.worker.ts",
     "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\workers\\pyodide.worker.ts",
-    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\audio\\index.ts"
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\audio\\index.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\auths\\index.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\channels\\index.ts",
+    "C:\\Users\\harold.noble\\Desktop\\RIC\\app\\frontend\\src\\lib\\apis\\chats\\index.ts"
   ],
-  "total_cost": 0.18440800000000002
+  "total_cost": 0.29112400000000005
 }
