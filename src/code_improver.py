@@ -1,7 +1,7 @@
 # code_improver.py
 import os
 import re
-from typing import Dict, Set, Tuple, Optional, Union
+from typing import Dict, Set, Tuple, Optional
 from tqdm import tqdm
 
 
@@ -47,7 +47,6 @@ class CodeImprover:
             '.css': 'CSS guidelines with consistent spacing and property ordering'
         }
         return style_mapping.get(ext, 'language-specific best practices')
-
 
     def get_prompt(self, file_path: str, options: Dict[str, bool]) -> Optional[str]:
         """Generate a tailored improvement prompt based on selected options and file type."""
