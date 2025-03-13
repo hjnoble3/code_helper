@@ -130,11 +130,3 @@ C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\UsersSol
 C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\Wrench.svelte
 C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\WrenchSolid.svelte
 C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\icons\XMark.svelteC:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\workspace\Knowledge.svelte
-C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\workspace\Prompts.svelte
-C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\workspace\Tools.svelte
-C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\workspace\common\AccessControl.svelte
-C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\workspace\common\AccessControlModal.svelte
-C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\workspace\common\ManifestModal.svelte
-C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\workspace\common\ValvesModal.svelte
-C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\workspace\Knowledge\CreateKnowledgeBase.svelte
-C:\Users\harold.noble\Desktop\RIC\app\frontend\src\lib\components\workspace\Knowledge\ItemMenu.svelte
